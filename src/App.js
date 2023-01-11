@@ -1,6 +1,8 @@
 import Home from './pages/Home/Home';
 import './App.css';
 
+/* TESTING GIT */
+
 function App() {
   return (
     <div>
