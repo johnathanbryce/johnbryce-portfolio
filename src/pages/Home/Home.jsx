@@ -2,7 +2,8 @@ import styles from './Home.module.css';
 
 // Internal Assets
 import logo from '../../images/jbLogo.png';
-// Internal COmponents
+
+// Internal Components
 import BracketIcon from '../../components/BracketIcons/BracketIcon';
 
 // External Libraries
@@ -11,11 +12,6 @@ import {
 } from "react-icons/fa";
 
 function Home() {
-
-
-
-
-
   return (
     <div className={styles.home_container}>
         <div className={styles.home_flex_wrapper}>
@@ -41,7 +37,7 @@ function Home() {
 
             <div className={styles.home_top_container}>
                 <div className={styles.top_container_left}> 
-                    <a className={styles.home_button_container} href="/">
+                    <a className={styles.home_button_container} href="/projects">
                         Projects 
                     </a>
 
@@ -58,7 +54,7 @@ function Home() {
 
                 </div>
                 <div className={styles.top_container_right}> 
-                    <a className={styles.home_button_container} href="/">
+                    <a className={styles.home_button_container} href="/skills">
                         Skills 
                     </a>
                     <div className={styles.vertical_line}>
@@ -77,7 +73,7 @@ function Home() {
 
             {/*MIDDLE SCREEN/LOGO CONTENT */}
             <div className={styles.middle_container}>
-                
+
                 <a href="https://www.linkedin.com/in/johnathanbryce/" target="_blank" rel="noreferrer"><FaLinkedin className={styles.icon}/></a>
                 <div className={styles.horizontal_line_middle}></div>
      
@@ -113,7 +109,7 @@ function Home() {
                     <div className={styles.vertical_line}>
                         <hr />
                     </div>
-                    <a className={styles.home_button_container} href="/">
+                    <a className={styles.home_button_container} href="/about">
                         About 
                     </a>
                 </div>
@@ -129,7 +125,7 @@ function Home() {
                     <div className={styles.vertical_line}>
                         <hr />
                     </div>
-                    <a className={styles.home_button_container} href="/">
+                    <a className={styles.home_button_container} href="/contact">
                         Contact
                     </a>
                 </div>

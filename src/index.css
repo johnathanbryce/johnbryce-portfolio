@@ -59,6 +59,10 @@ img, picture, svg, video{
   max-width: 100%;
 }
 
+ul, ol, li{
+  list-style-type: none;
+}
+
 /* Change the font styles in all browsers, and remove the margin in Firefox and Safari */
 input, textarea, button, select{
   font: inherit;
