@@ -1,0 +1,24 @@
+:root{
+    --backgroundColor: #121212;
+
+    --primaryColor: #FFFFFF;
+    --secondaryColor: #256EFF;
+
+    --standoutColor: #EF3E36;
+    
+    --fontColor: #FFFFFF;
+    --headerColor: #FFFFFF;
+
+    --btnFontColor: #FFFFFF;
+    --btnBackgroundColor: #256EFF;
+
+    --bracketArrowColor: #877666;
+
+    --sollunaEssence: rgb(186, 161, 204);
+    --romp: #561a4c;
+    --dailyFeed: #c83e4d;;
+    --diceGame: #05bcff;
+
+    --lineSize: 0.1rem;
+
+}

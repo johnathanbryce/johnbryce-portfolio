@@ -1,3 +1,14 @@
+@import './vars.css';
+@import url('https://fonts.googleapis.com/css?family=K2D'); /* K2D font family */
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +16,87 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: var(--backgroundColor);
+  font-family: 'K2D', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html {
+  font-size: 62.5%; /* 100% would be 16 px so now, 1 rem = 10px */
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  /*color-scheme: dark light; */
+  
+}
+
+main {
+  display: block; /* Render the main element consistently in IE */
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  background-color: transparent;/* Remove the gray background on active links in IE 10 */
+}
+
+img {
+  border-style: none; /* Remove the border on images inside links in IE 10 */
+}
+
+
+b,
+strong {
+  font-weight: bolder; /* Add the correct font weight in Chrome, Edge, and Safari */
+}
+
+
+small {
+  font-size: 80%; /* Add the correct font size in all browsers */
+}
+
+
+img, picture, svg, video{
+  display: block;
+  max-width: 100%;
+}
+
+/* Change the font styles in all browsers, and remove the margin in Firefox and Safari */
+input, textarea, button, select{
+  font: inherit;
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; 
+}
+
+/* Remove the inner padding in Chrome and Safari on macOS */
+[type='search']::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6{
+  color: var(--primaryColor);
+}
+
+h1{
+  font-size: clamp(4rem, 8vw, 10rem);
+}
+
+h2{
+  font-size: clamp(3.5rem, 7vw, 9rem);
+
+}
+
+h3{
+  font-size: clamp(3rem, 6vw, 8rem);
+
+}
+
+h4 {
+  font-size: clamp(2.5rem, 5vw, 7rem);
+
+}
+
+p {
+  font-size: 1.6rem; /* standard font size (16px) */
+  color: var(--primaryColor)
 }

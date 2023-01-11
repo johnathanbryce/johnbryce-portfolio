@@ -1,0 +1,346 @@
+.home_container{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+
+.home_flex_wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.home_top_container, .home_bottom_container{
+    display: flex;
+    gap: 14%;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 100vh;
+}
+
+/* MIDDLE CONTAINER -- LOGO & ICONS */
+.middle_container{
+    display: flex;
+    justify-content: center;
+}
+
+.icon{
+    color: white;
+    position: relative;
+    top: 38%;
+    left: 2.5%;
+    width: 100%;
+    height: 25%;
+    border-radius: 50%;
+    font-size: 10rem;
+    color: white;
+}
+
+.icon:hover,
+.icon:active {
+  color: var(--secondaryColor);
+  border-radius: 100%;
+
+}
+
+/* TOP AND BOTTOM CONTAINERS FOR BTN AND LINES */
+.top_container_left, .top_container_right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    height: 100%;
+   
+
+
+}
+.bottom_container_left, .bottom_container_right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* FLIP CARD/LOGO */
+
+.logo_container{
+    width: 27%;
+    min-width: 12.5rem;
+
+    border: 0.28rem solid var(--primaryColor);
+}
+
+.logo{
+   width: 100%;
+   height: 100%;
+   border: var(--lineSize) solid white;
+   
+}
+
+.flip_card {
+    background-color: transparent;
+    
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip_card_inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip_card:hover .flip_card_inner {
+    transform: rotateY(180deg);
+
+  }
+  
+  /* Position the front and back side */
+  .flip_card_front, .flip_card_back {
+  
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+
+  
+  /* Style the back side */
+  .flip_card_back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    color: white;
+    transform: rotateY(180deg);
+    top: 35%;
+
+  }
+
+  .flip_card_back p{
+    padding: 0.5rem;
+  }
+
+
+
+/* BUTTONS */
+.home_button_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--btnBackgroundColor);
+    width: 60%;
+    height: 25%;
+    font-size: clamp(1.5rem, 2vw, 4rem);
+    color: var(--btnFontColor);
+    border: var(--lineSize) solid white;
+    border-radius: 1rem;
+    letter-spacing: 0.25rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.5s;
+    z-index: 100;
+}
+
+
+
+.home_button_container:hover{
+    background-color: var(--primaryColor);
+    border: 0.5rem solid #256EFF;
+    letter-spacing: 0.5rem;
+    color: #256EFF;
+	-webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+         transition: all 0.4s ease-in-out;
+}
+
+
+/* LINES */
+.vertical_line hr{
+    height: 5rem;
+    border: 1;
+    background: var(--primaryColor);
+}
+
+.horizontal_line_container_left{
+    width: 50%;
+    height: 0%;
+    align-self: flex-end;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+}
+
+.horizontal_line_middle{
+    border: var(--lineSize) solid var(--primaryColor);
+    width: 15%;
+    height: 0%;
+    top: 50%;
+    position:relative;
+
+
+}
+
+.horizontal_line{
+    border: var(--lineSize) solid var(--primaryColor);
+    position: relative;
+    top: 0.24rem;
+
+
+}
+
+.horizontal_line_container_right{
+    width: 50%;
+    height: 0%;
+    align-self: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    
+}
+
+.bottom_container_left .horizontal_line{
+    position: relative;
+    top: 0rem;
+}
+
+.bottom_container_right .horizontal_line{
+    position: relative;
+    top: 0rem;
+}
+
+
+/* Mobile devices */
+@media only screen and (max-width: 480px) {
+    .home_button_container{
+        width: 75%;
+        height: 20%;
+    }
+
+    .flip_card_back{
+        top: 25%;
+    }
+
+    .flip_card_back p{
+        padding: 0.2rem;
+        font-size: 0.85rem;
+      }
+}
+
+
+
+/* BUBBLE BACKGROUND STYLES */
+.home_container{
+    overflow: hidden;
+    z-index: 100;
+    float:inline-start;
+}
+
+.bubbles{
+    position:relative;
+    display: flex;
+    justify-content: space-between;
+    z-index: -100; 
+    width: 100%;
+    height: 0;
+}
+
+.bubbles span{
+    position: relative;
+    width: 0.1rem;
+    height: 0.1rem;
+    margin: 0 2rem;
+    border-radius: 50%;
+    box-shadow: 0 0 0 1rem var(--primaryColor);
+    z-index: -100;
+}
+
+
+.bubbles span:nth-child(1){
+    animation: animateBubbles 19s linear infinite;
+}
+
+.bubbles span:nth-child(2){
+    animation: animateBubbles 21s reverse infinite;
+}
+
+.bubbles span:nth-child(3){
+    animation: animateBubbles 18s linear infinite;
+}
+
+.bubbles span:nth-child(4){
+    animation: animateBubbles 19s alternate infinite;
+}
+
+.bubbles span:nth-child(5){
+    animation: animateBubbles 17s reverse infinite;
+}
+
+.bubbles span:nth-child(6){
+    animation: animateBubbles 19s alternate-reverse infinite;
+}
+
+.bubbles span:nth-child(7){
+    animation: animateBubbles 18s reverse infinite;
+}
+
+.bubbles span:nth-child(8){
+    animation: animateBubbles 16s linear infinite;
+}
+
+.bubbles span:nth-child(9){
+    animation: animateBubbles  22s alternate infinite;
+}
+
+.bubbles span:nth-child(10){
+    animation: animateBubbles 20s alternate infinite;
+}
+
+.bubbles span:nth-child(11){
+    animation: animateBubbles 18s alternate infinite;
+}
+
+.bubbles span:nth-child(12){
+    animation: animateBubbles 21s reverse infinite;
+}
+
+.bubbles span:nth-child(13){
+    animation: animateBubbles  20s alternate-reverse infinite;
+}
+
+.bubbles span:nth-child(14){
+    animation: animateBubbles 18s linear infinite;
+}
+
+.bubbles span:nth-child(15){
+    animation: animateBubbles  19s alternate-reverse infinite;
+}
+
+.bubbles span:nth-child(16){
+    animation: animateBubbles 22s alternate infinite;
+}
+
+
+@keyframes animateBubbles {
+    0%{
+        transform: translateY(100vh) scale(0);
+    }
+    100%{
+        transform: translateY(-100vh) scale(0.5);
+    }
+}
+
+
+
+
+
+
