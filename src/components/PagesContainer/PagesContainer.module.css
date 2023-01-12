@@ -1,9 +1,18 @@
 .pages_container{
-    height: 85vh; /* removes vertical scrolling on mobile */
+    height: 65vh; /* removes vertical scrolling */
     display: flex;
     flex-direction: column;
     gap: 5%;
-    margin: 0 5%;
+    margin: 5% 3%;
     padding: 2rem;
+
     
+}
+
+/* Mobile devices / smaller screens - column layout */
+@media only screen and (max-width: 600px){
+    .pages_container{
+        margin: 2% 1%;
+
+    }
 }

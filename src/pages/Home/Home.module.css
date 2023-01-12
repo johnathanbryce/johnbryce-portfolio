@@ -117,6 +117,7 @@
 
   .flip_card_back p{
     padding: 0.5rem;
+    font-size: 1.2rem;
   }
 
 /* BUTTONS */
@@ -136,15 +137,14 @@
     text-transform: uppercase;
     transition: 0.5s;
     z-index: 100;
+    cursor: pointer;
 }
 
 
 
 .home_button_container:hover{
-    background-color: var(--primaryColor);
-    border: 0.5rem solid #256EFF;
+    background-color: var(--btnHoverColor);
     letter-spacing: 0.5rem;
-    color: #256EFF;
 	-webkit-transition: all 0.4s ease-in-out;
     -moz-transition: all 0.4s ease-in-out;
          transition: all 0.4s ease-in-out;
@@ -207,6 +207,16 @@
 }
 
 
+
+/* Adjusting font size for smaller web screens */
+@media only screen and (max-width: 600px){
+    .flip_card_back p{
+        padding: 0.2rem;
+        font-size: 0.85rem;
+      }
+
+}
+
 /* Mobile devices */
 @media only screen and (max-width: 480px) {
     .home_button_container{
@@ -217,11 +227,6 @@
     .flip_card_back{
         top: 25%;
     }
-
-    .flip_card_back p{
-        padding: 0.2rem;
-        font-size: 0.85rem;
-      }
 }
 
 

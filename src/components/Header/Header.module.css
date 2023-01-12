@@ -25,18 +25,32 @@ nav{
     padding: 2rem;
 }
 
+/* Uncomment if bringing back navbar numbers
+.nav_number{
+    color: var(--secondaryColor);
+    font-size: clamp(1.4rem, 2vw, 2rem);
+}
+*/
+
 
 /* Phones & Small Screens */
 @media only screen and (max-width: 600px){
     .nav_link{
-        padding: 1rem;
+        padding: 0.5rem;
+    }
+
+    .nav_number{
+        display: none;
+        font-size: .5rem;
     }
     .nav_container{
         gap: 0.5rem;
         display: flex;
         justify-content: flex-start;
-
+        align-items: center;
     }
+
+
 }
 
 /* Galaxy Fold / phones smaller than 300 px */
