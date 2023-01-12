@@ -1,0 +1,9 @@
+.pages_container{
+    height: 85vh; /* removes vertical scrolling on mobile */
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+    margin: 0 5%;
+    padding: 2rem;
+    
+}

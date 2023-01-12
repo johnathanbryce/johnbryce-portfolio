@@ -9,17 +9,10 @@ import Projects from './pages/Projects/Projects';
 import Skills from './pages/Skills/Skills';
 import Header from './components/Header/Header';
 
-
 // External Packages       <Home />
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-
-
-
 function App() {
-
-
-
   return (
     <BrowserRouter>
         <Routes>
@@ -29,8 +22,6 @@ function App() {
           <Route path='/projects' element={<Projects/>} exact/>
           <Route path='/skills' element={<Skills/>} exact/>
         </Routes>
-
-
     </BrowserRouter>
   );
 }

@@ -1,0 +1,132 @@
+.about_container{
+    display: flex;
+    gap: 5rem;
+}
+
+/* BIO PIC CONTAINER -- left side on web / column on mobile */
+.bio_pic_container{
+    width: 50%; /*controls bio pic size on mobile */
+    display: flex;
+    margin: 0 auto;
+    flex: 1; /* vs. about_content_container */
+
+}
+
+/* TEXT/BTN CONTAINER -- right side on web / column on mobile */
+.about_content_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 2rem;
+    flex: 1.8; /* vs. bio_pic_container */
+
+}
+.text_container{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    gap: 3rem;
+}
+
+.bio_pic{
+    width: 100%;
+    object-fit: cover;
+    border-radius: var(--borderRadius);
+}
+
+.highlight{
+    color: var(--secondaryColor);
+    font-size: clamp(2rem, 3vw, 4rem);
+}
+.highlight_name{
+    font-size: clamp(2rem, 3vw, 4rem);
+}
+
+/* RESUME BTN & ICONS */
+.links_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4rem;
+    width: 80%;
+}
+
+.resume_btn_container{
+    flex: 1.25; /* vs. icons_container */
+}
+
+.resume_btn{
+    width: 100%;
+    padding: 1.5rem;
+    font-size: clamp(1.5rem, 2vw, 4rem);
+    color: var(--primaryColor);
+    background-color: var(--secondaryColor);
+    border: var(--lineSize) solid white;
+    border-radius: var(--borderRadius);
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+    transition: 0.5s;
+}
+
+.resume_btn:hover{
+    background-color: var(--primaryColor);
+    border: 0.2rem solid #256EFF;
+    letter-spacing: 0.5rem;
+    color: #256EFF;
+	-webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+         transition: all 0.4s ease-in-out;
+}
+
+.icons_container{
+    display: flex;
+    align-items: center;
+    flex: 1.2; /* vs. resume_btn_container */
+    gap: 5rem;
+}
+
+.icon{
+    color: white;
+    font-size: clamp(4rem, 5vw, 6rem);
+
+}
+
+.icon:hover,
+.icon:active {
+  color: var(--secondaryColor);
+  border-radius: 100%;
+
+}
+
+/* Mobile devices / smaller screens - column layout */
+@media only screen and (max-width: 600px) {
+    .about_container{
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+    }
+    .bio_pic_container{
+        width: 80%;
+        margin: 0; /* moves img to left in mobile view */
+    }
+
+    .text_container{
+        width: 100%;
+        gap: 1rem;
+    }
+    .about_content_container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        letter-spacing: 0.1rem;
+    }
+    .links_container{
+        margin-top: 2%;
+        width: 100%;
+    }
+
+    .about_content_container > p {
+        width: 100%;
+        text-align: justify;
+    }
+}
