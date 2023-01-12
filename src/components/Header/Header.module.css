@@ -22,7 +22,21 @@ nav{
 .nav_link{ 
     font-size: clamp(1.4rem, 2vw, 2rem);
     color: white;
+    padding: 2rem;
+}
 
+
+/* Phones & Small Screens */
+@media only screen and (max-width: 600px){
+    .nav_link{
+        padding: 1rem;
+    }
+    .nav_container{
+        gap: 0.5rem;
+        display: flex;
+        justify-content: flex-start;
+
+    }
 }
 
 /* Galaxy Fold / phones smaller than 300 px */

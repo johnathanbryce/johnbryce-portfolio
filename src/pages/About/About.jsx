@@ -19,7 +19,6 @@ function About() {
       
     <Header />
     <PagesContainer>
-      <h2> About </h2>
       <section className={styles.about_container}>
 
           {/* left side content on web / column on mobile */}
