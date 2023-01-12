@@ -1,5 +1,6 @@
 .about_container{
     display: flex;
+    /*flex-direction: row-reverse;*/
     gap: 5rem;
 }
 
@@ -59,20 +60,19 @@
     width: 100%;
     padding: 1.5rem;
     font-size: clamp(1.5rem, 2vw, 4rem);
-    color: var(--primaryColor);
-    background-color: var(--secondaryColor);
+    color: var(--btnFontColor);
+    background-color: var(--btnBackgroundColor);
     border: var(--lineSize) solid white;
     border-radius: var(--borderRadius);
     font-weight: bold;
     letter-spacing: 0.2rem;
     transition: 0.5s;
+    cursor: pointer;
 }
 
 .resume_btn:hover{
-    background-color: var(--primaryColor);
-    border: 0.2rem solid #256EFF;
+    background-color: var(--btnHoverColor);
     letter-spacing: 0.5rem;
-    color: #256EFF;
 	-webkit-transition: all 0.4s ease-in-out;
     -moz-transition: all 0.4s ease-in-out;
          transition: all 0.4s ease-in-out;
@@ -103,10 +103,10 @@
     .about_container{
         display: flex;
         flex-direction: column;
-        gap: 3rem;
+        gap: 4rem;
     }
     .bio_pic_container{
-        width: 80%;
+        width: 50%;
         margin: 0; /* moves img to left in mobile view */
     }
 
@@ -125,8 +125,5 @@
         width: 100%;
     }
 
-    .about_content_container > p {
-        width: 100%;
-        text-align: justify;
-    }
+
 }
