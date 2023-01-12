@@ -11,7 +11,7 @@ function Contact() {
       
     <Header />
     <PagesContainer>
-      <h2> Contact </h2>
+
       
     </PagesContainer>
     </div>

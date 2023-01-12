@@ -11,7 +11,6 @@ function Projects() {
       
     <Header />
     <PagesContainer>
-      <h2> Projects </h2>
       
     </PagesContainer>
     </div>

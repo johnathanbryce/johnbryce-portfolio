@@ -11,7 +11,6 @@ function Skills() {
       
     <Header />
     <PagesContainer>
-      <h2> Skills </h2>
       
     </PagesContainer>
     </div>
