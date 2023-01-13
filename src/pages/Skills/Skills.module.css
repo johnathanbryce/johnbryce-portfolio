@@ -88,5 +88,6 @@
 
     .skills_grid_container{
         gap: 0.5rem;
+        line-height: 1;
     }
 }

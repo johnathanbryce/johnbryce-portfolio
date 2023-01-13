@@ -4,6 +4,7 @@ import styles from './Skills.module.css'
 // Components
 import Header from '../../components/Header/Header';
 import PagesContainer from '../../components/PagesContainer/PagesContainer';
+import LogoBubbles from '../../components/LogoBubbles/LogoBubbles';
 
 function Skills() {
   return (
