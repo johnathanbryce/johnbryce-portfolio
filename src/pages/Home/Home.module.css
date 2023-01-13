@@ -17,6 +17,64 @@
     width: 100%;
 }
 
+/* Lines/Logo Animations & Styles */
+.logo_animation_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    height: 50vh;
+}
+
+/* RIGHT ARROW */
+.left_arrow{
+    stroke-dasharray: 70;
+    stroke-dashoffset: 418;
+    animation: fillSVGLeft 15s linear infinite;
+}
+
+.right_arrow{
+    stroke-dasharray: 70;
+    stroke-dashoffset: -418;
+    animation: fillSVGRight 15s linear infinite;
+}
+
+.text{
+    animation: animateText 4s linear;
+    margin-bottom: 2rem;
+}
+
+
+@keyframes fillSVGLeft{
+  to{
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes fillSVGRight{
+    to{
+        stroke-dashoffset: 0;
+      }
+}
+
+
+@keyframes animateText{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
+
+
+
+/******************* OLD LAYOUT CSS *******************/
+
+/* CSS FOR OLD LAYOUT */
+/*
 .home_top_container, .home_bottom_container{
     display: flex;
     gap: 14%;
@@ -24,34 +82,41 @@
     justify-content: center;
     width: 90%;
     height: 100vh;
-}
+} 
+
+*/
 
 /* MIDDLE CONTAINER -- LOGO & ICONS */
+
+/*
 .middle_container{
     display: flex;
     justify-content: center;
 }
 
 .icon{
-    color: white;
+    color: var(--iconColor);
     position: relative;
     top: 38%;
     left: 2.5%;
     width: 100%;
     height: 25%;
-    border-radius: 50%;
+    border-radius: var(--borderRadius);
     font-size: 10rem;
-    color: white;
+
 }
 
 .icon:hover,
 .icon:active {
   color: var(--secondaryColor);
-  border-radius: 100%;
-
 }
+*/ 
+
 
 /* TOP AND BOTTOM CONTAINERS FOR BTN AND LINES */
+
+/*
+
 .top_container_left, .top_container_right{
     display: flex;
     flex-direction: column;
@@ -69,8 +134,11 @@
     width: 100%;
     height: 100%;
 }
+*/
 
 /* FLIP CARD/LOGO */
+
+/*
 .logo_container{
     width: 27%;
     min-width: 12.5rem;
@@ -88,8 +156,12 @@
     background-color: transparent;
     perspective: 1000px; 
   }
-  
+
+
+*/
   /* This container is needed to position the front and back side */
+
+  /*
   .flip_card_inner {
     position: relative;
     width: 100%;
@@ -98,20 +170,26 @@
     transition: transform 0.8s;
     transform-style: preserve-3d;
   }
+
+  */
+  
   
   /* Do an horizontal flip when you move the mouse over the flip box container */
+
+  /*
   .flip_card:hover .flip_card_inner {
     transform: rotateY(180deg);
   }
-  
+  */
+
   /* Position the front and back side */
-  .flip_card_front, .flip_card_back {
-    -webkit-backface-visibility: hidden; /* Safari */
+/*   .flip_card_front, .flip_card_back {
+    -webkit-backface-visibility: hidden; 
     backface-visibility: hidden;
-  }
+  } */
 
   /* Style the back side */
-  .flip_card_back {
+/*   .flip_card_back {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -123,19 +201,19 @@
   .flip_card_back p{
     padding: 0.5rem;
     font-size: 1.2rem;
-  }
+  } */
 
 /* BUTTONS */
-.home_button_container{
+/* .home_button_container{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--btnBackgroundColor);
+    background-color: var(--btnHomeBackgroundColor);
     width: 60%;
     height: 25%;
     font-size: clamp(1.5rem, 2vw, 4rem);
     color: var(--btnFontColor);
-    border: var(--lineSize) solid white;
+    border: var(--lineSize) solid #0A182F;
     border-radius: var(--borderRadius);
     letter-spacing: 0.25rem;
     font-weight: bold;
@@ -148,18 +226,20 @@
 
 
 .home_button_container:hover{
-    background-color: var(--btnHoverColor);
+    background-color: var(--btnHomeHoverColor);
+    color: var(--btnHomeFontColorHover);
+    border: 0.3rem solid #0A182F;
     letter-spacing: 0.5rem;
 	-webkit-transition: all 0.4s ease-in-out;
     -moz-transition: all 0.4s ease-in-out;
          transition: all 0.4s ease-in-out;
-}
+} */
 
 
 /* LINES */
-.vertical_line hr{
+/* .vertical_line hr{
     height: 5rem;
-    border: 1;
+    border: var(--lineSize) solid var(--primaryColor);
     background: var(--primaryColor);
 }
 
@@ -211,19 +291,19 @@
     top: 0rem;
 }
 
-
+ */
 
 /* Adjusting font size for smaller web screens */
-@media only screen and (max-width: 600px){
+/* @media only screen and (max-width: 600px){
     .flip_card_back p{
         padding: 0.2rem;
         font-size: 0.85rem;
       }
 
-}
+} */
 
 /* Mobile devices */
-@media only screen and (max-width: 480px) {
+/* @media only screen and (max-width: 480px) {
     .home_button_container{
         width: 75%;
         height: 20%;
@@ -232,6 +312,6 @@
     .flip_card_back{
         top: 25%;
     }
-}
+} */
 
 

@@ -1,0 +1,93 @@
+
+.bubbles{
+    position:relative;
+    display: flex;
+    justify-content: space-between;
+    z-index: -100; 
+    width: 100%;
+    height: 0rem;
+
+}
+
+.bubbles span{
+    position: relative;
+    color: var(--secondaryColor);
+    font-size: 10rem;
+    width: 10rem; /* 0.1rem */
+    height: 1rem; /* 0.1rem */
+    margin: 0 1rem;
+    /*border-radius: 50%; */
+    /*box-shadow: 0 0 0 1rem var(--secondaryColor);*/ 
+    z-index: -100;
+    animation: animateBubbles 5s linear infinite;
+}
+
+
+.bubbles span:nth-child(1){
+    animation: animateBubbles 5s linear;
+
+}
+
+.bubbles span:nth-child(2){
+    animation: animateBubbles 4s linear;
+
+}
+
+.bubbles span:nth-child(3){
+    animation: animateBubbles 6s linear;
+    
+}
+
+.bubbles span:nth-child(4){
+    animation: animateBubbles 3.25s linear;
+}
+
+.bubbles span:nth-child(5){
+    animation: animateBubbles 5s linear;
+} 
+
+.bubbles span:nth-child(6){
+    animation: animateBubbles 3.5s linear;
+}
+
+.bubbles span:nth-child(7){
+    animation: animateBubbles 4s linear;
+}
+
+.bubbles span:nth-child(8){
+    animation: animateBubbles 6s linear;
+}
+
+.bubbles span:nth-child(9){
+    animation: animateBubbles  5s linear;
+}
+
+.bubbles span:nth-child(10){
+    animation: animateBubbles 3.5s linear;
+}
+
+.bubbles span:nth-child(11){
+    animation: animateBubbles 4s linear;
+}
+
+.bubbles span:nth-child(12){
+    animation: animateBubbles 4.5s linear;
+}
+
+
+@keyframes animateBubbles {
+    0%{
+        transform: translateY(100vh) scale(0);
+    }
+    100%{
+        transform: translateY(-100vh) scale(0.3);
+    }
+}
+
+/* Mobile devices / smaller screens - column layout */
+@media only screen and (max-width: 600px){
+    .bubbles span{
+        margin: 0;
+        width: 5rem;
+    }
+}

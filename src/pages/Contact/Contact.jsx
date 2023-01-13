@@ -50,6 +50,9 @@ function Contact() {
           </div>
         </div>
 
+      {/* content separating line */}
+      <div className={styles.line_content_break}> </div>
+      {/* content separating line */}
 
         {/* CONTACT FORM: */}
         <div className={styles.form_container}>

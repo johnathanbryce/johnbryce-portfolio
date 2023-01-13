@@ -26,6 +26,7 @@ html {
   -webkit-text-size-adjust: 100%;
   /*color-scheme: dark light; */
   
+  
 }
 
 main {
@@ -102,5 +103,6 @@ h4 {
 
 p {
   font-size: clamp(1.2rem, 4vw, 2rem); 
-  color: var(--primaryColor)
+  color: var(--primaryColor);
+  word-spacing: 0.25rem;
 }

@@ -65,7 +65,7 @@
 }
 
 .line_content_break{
-    border: var(--lineSize) solid var(--primaryColor);
+    border: var(--lineSize) solid var(--lineSeperatorColor);
     height: 0.1rem;
     position: relative;
     height: 100%;
@@ -88,5 +88,6 @@
 
     .skills_grid_container{
         gap: 0.5rem;
+        line-height: 1;
     }
 }
