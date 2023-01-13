@@ -35,8 +35,14 @@ form {
     gap: 2.5rem;
 }
 
+input:focus, textarea:focus{
+    outline: 0.2rem solid var(--secondaryColor);
+}
+
 input:active::placeholder, input:focus::placeholder, textarea:focus::placeholder{
     font-size: 0;
+
+
 }
 
 form input {

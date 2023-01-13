@@ -2,6 +2,11 @@
     display: flex;
     justify-content: center;
     height: 100vh;
+
+    /* NECESSARY FOR BUBBLES ANIMATION TO WORK: */
+    overflow: hidden;
+    z-index: 100;
+    float:inline-start;
 }
 
 .home_flex_wrapper{
@@ -228,112 +233,5 @@
         top: 25%;
     }
 }
-
-
-
-/* BUBBLE BACKGROUND STYLES */
-.home_container{
-    overflow: hidden;
-    z-index: 100;
-    float:inline-start;
-}
-
-.bubbles{
-    position:relative;
-    display: flex;
-    justify-content: space-between;
-    z-index: -100; 
-    width: 100%;
-    height: 0;
-}
-
-.bubbles span{
-    position: relative;
-    width: 0.1rem;
-    height: 0.1rem;
-    margin: 0 2rem;
-    border-radius: 50%;
-    box-shadow: 0 0 0 1rem var(--primaryColor);
-    z-index: -100;
-}
-
-
-.bubbles span:nth-child(1){
-    animation: animateBubbles 19s linear infinite;
-}
-
-.bubbles span:nth-child(2){
-    animation: animateBubbles 21s reverse infinite;
-}
-
-.bubbles span:nth-child(3){
-    animation: animateBubbles 18s linear infinite;
-}
-
-.bubbles span:nth-child(4){
-    animation: animateBubbles 19s alternate infinite;
-}
-
-.bubbles span:nth-child(5){
-    animation: animateBubbles 17s reverse infinite;
-}
-
-.bubbles span:nth-child(6){
-    animation: animateBubbles 19s alternate-reverse infinite;
-}
-
-.bubbles span:nth-child(7){
-    animation: animateBubbles 18s reverse infinite;
-}
-
-.bubbles span:nth-child(8){
-    animation: animateBubbles 16s linear infinite;
-}
-
-.bubbles span:nth-child(9){
-    animation: animateBubbles  22s alternate infinite;
-}
-
-.bubbles span:nth-child(10){
-    animation: animateBubbles 20s alternate infinite;
-}
-
-.bubbles span:nth-child(11){
-    animation: animateBubbles 18s alternate infinite;
-}
-
-.bubbles span:nth-child(12){
-    animation: animateBubbles 21s reverse infinite;
-}
-
-.bubbles span:nth-child(13){
-    animation: animateBubbles  20s alternate-reverse infinite;
-}
-
-.bubbles span:nth-child(14){
-    animation: animateBubbles 18s linear infinite;
-}
-
-.bubbles span:nth-child(15){
-    animation: animateBubbles  19s alternate-reverse infinite;
-}
-
-.bubbles span:nth-child(16){
-    animation: animateBubbles 22s alternate infinite;
-}
-
-
-@keyframes animateBubbles {
-    0%{
-        transform: translateY(100vh) scale(0);
-    }
-    100%{
-        transform: translateY(-100vh) scale(0.5);
-    }
-}
-
-
-
-
 
 

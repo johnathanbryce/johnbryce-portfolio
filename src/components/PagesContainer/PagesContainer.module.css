@@ -1,5 +1,5 @@
 .pages_container{
-    height: 65vh; /* removes vertical scrolling */
+    height: 70vh; /* removes vertical scrolling */
     display: flex;
     flex-direction: column;
     gap: 5%;

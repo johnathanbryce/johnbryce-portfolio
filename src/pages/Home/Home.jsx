@@ -2,6 +2,7 @@ import styles from './Home.module.css';
 
 // Internal Assets
 import logo from '../../images/jbLogo.png';
+import Bubbles from '../../components/Bubbles/Bubbles';
 
 // Internal Components
 import BracketIcon from '../../components/BracketIcons/BracketIcon';
@@ -15,24 +16,8 @@ function Home() {
   return (
     <div className={styles.home_container}>
         <div className={styles.home_flex_wrapper}>
-            <div className={styles.bubbles}>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+            <Bubbles />
+
             {/*TOP SCREEN CONTENT */}
 
             <div className={styles.home_top_container}>
@@ -95,6 +80,7 @@ function Home() {
                 <div className={styles.horizontal_line_middle}></div>
                 <a href="https://github.com/johnathanbryce" target="_blank" rel="noreferrer"><FaGithub className={styles.icon}/></a>
             </div>
+
   
             {/*BOTTOM SCREEN CONTENT */}
             <div className={styles.home_bottom_container}>
@@ -113,7 +99,7 @@ function Home() {
                         About 
                     </a>
                 </div>
-
+                
                 <div className={styles.bottom_container_right}>
                     <div className={styles.horizontal_line_container_right}>
                         <div className={styles.horizontal_line}> </div>
@@ -129,7 +115,9 @@ function Home() {
                         Contact
                     </a>
                 </div>
-            </div>   
+
+            </div> 
+
         </div>
 
     </div>

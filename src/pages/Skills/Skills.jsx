@@ -12,25 +12,38 @@ function Skills() {
     <PagesContainer>
       <section className={styles.skills_education_container}>
 
-      <div className={styles.education_container}>
-          <p> Web Development Fundamentals</p> 
-          <p> Intro To Web Development </p>
-          <p> BSc. Psychology </p>
-      </div>
-      <div className={styles.education_container}>
-          <p> - BCIT </p> 
-          <p> - Lighthouse Labs  </p>
-          <p> - UVIC </p>
+      <div className={styles.education_grid_container}>
+        <h2 className={styles.education_header}> Relevant Education</h2>
+          <p><a href="https://www.bcit.ca/programs/web-development-fundamentals-statement-of-completion-part-time-0325000000/" target="_blank" rel="noreferrer"> 
+          Web Development Fundamentals </a></p>
+          <div className={styles.horizontal_line}> </div>
+          <p> BCIT </p>
+          <p><a href="https://www.lighthouselabs.ca/en/intro-web-development-course" target="_blank" rel="noreferrer"> 
+          Intro to Web Development </a></p>
+          <div className={styles.horizontal_line}> </div>
+          <p> Lighthouse Labs </p>
+          <p><a href="https://www.uvic.ca/socialsciences/psychology/index.php" target="_blank" rel="noreferrer"> 
+          BSc. Psychology </a></p>
+          <div className={styles.horizontal_line}> </div>
+          <p> UVIC </p>
       </div>
 
+      {/* content separating line */}
+      <div className={styles.line_content_break}> </div>
+      {/* content separating line */}
 
         <div className={styles.skills_grid_container}>
+          <h2 className={styles.skills_header}> Skills </h2>
           <div className={styles.skills_flex}>
             <p> JavaScript ES6</p>
             <div className={styles.horizontal_line}> </div>
           </div>
           <div className={styles.skills_flex}>
-            <p> HTML / CSS </p>
+            <p> HTML5 </p>
+            <div className={styles.horizontal_line}> </div>
+          </div>
+          <div className={styles.skills_flex}>
+            <p> CSS3 </p>
             <div className={styles.horizontal_line}> </div>
           </div>
           <div className={styles.skills_flex}>
@@ -38,15 +51,11 @@ function Skills() {
             <div className={styles.horizontal_line}> </div>
           </div>
           <div className={styles.skills_flex}>
-            <p> Sass</p>
+            <p> SASS </p>
             <div className={styles.horizontal_line}> </div>
           </div>
           <div className={styles.skills_flex}>
             <p> jQuery </p>
-            <div className={styles.horizontal_line}> </div>
-          </div>
-          <div className={styles.skills_flex}>
-            <p> Styled Components </p>
             <div className={styles.horizontal_line}> </div>
           </div>
           <div className={styles.skills_flex}>
@@ -57,10 +66,8 @@ function Skills() {
             <p> Figma / Adobe XD </p>
             <div className={styles.horizontal_line}> </div>
           </div>
-
-
-
         </div>
+
       </section>
       
     </PagesContainer>
