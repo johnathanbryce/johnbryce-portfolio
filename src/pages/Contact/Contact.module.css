@@ -49,8 +49,7 @@ form input {
     padding: 1rem;
     width: 100%;
     font-size: 1.6rem;
-    border: none;
-    border-bottom: 1px solid #CCC;
+    border: 0.05rem solid #0A182F;
     border-radius: var(--borderRadius);
 }
 
@@ -68,6 +67,7 @@ textarea {
     padding: 1rem;
     resize: none;
     font-size: 1.6rem;
+    border: 0.05rem solid #0A182F;
     border-radius: var(--borderRadius);
 }
 
@@ -87,10 +87,18 @@ textarea {
 
 .form_btn:hover{
     background-color: var(--btnHoverColor);
+    color: var(--btnFontColorHover);
     letter-spacing: 0.5rem;
 	-webkit-transition: all 0.4s ease-in-out;
     -moz-transition: all 0.4s ease-in-out;
          transition: all 0.4s ease-in-out;
+}
+
+.line_content_break{
+    border: var(--lineSize) solid var(--lineSeperatorColor);
+    height: 0.1rem;
+    position: relative;
+    height: 100%;
 }
 
 /* FORM SUBMITTED STYLES */
@@ -129,5 +137,11 @@ textarea {
     .form_btn{
         width: 100%; 
     }
+
+    .line_content_break{
+        display: none;
+    }
+
+
 
 }

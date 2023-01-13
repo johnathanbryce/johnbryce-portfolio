@@ -33,22 +33,20 @@
 }
 
 .icon{
-    color: white;
+    color: var(--iconColor);
     position: relative;
     top: 38%;
     left: 2.5%;
     width: 100%;
     height: 25%;
-    border-radius: 50%;
+    border-radius: var(--borderRadius);
     font-size: 10rem;
-    color: white;
+
 }
 
 .icon:hover,
 .icon:active {
   color: var(--secondaryColor);
-  border-radius: 100%;
-
 }
 
 /* TOP AND BOTTOM CONTAINERS FOR BTN AND LINES */
@@ -130,12 +128,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--btnBackgroundColor);
+    background-color: var(--btnHomeBackgroundColor);
     width: 60%;
     height: 25%;
     font-size: clamp(1.5rem, 2vw, 4rem);
     color: var(--btnFontColor);
-    border: var(--lineSize) solid white;
+    border: var(--lineSize) solid #0A182F;
     border-radius: var(--borderRadius);
     letter-spacing: 0.25rem;
     font-weight: bold;
@@ -148,7 +146,9 @@
 
 
 .home_button_container:hover{
-    background-color: var(--btnHoverColor);
+    background-color: var(--btnHomeHoverColor);
+    color: var(--btnHomeFontColorHover);
+    border: 0.3rem solid #0A182F;
     letter-spacing: 0.5rem;
 	-webkit-transition: all 0.4s ease-in-out;
     -moz-transition: all 0.4s ease-in-out;
@@ -159,7 +159,7 @@
 /* LINES */
 .vertical_line hr{
     height: 5rem;
-    border: 1;
+    border: var(--lineSize) solid var(--primaryColor);
     background: var(--primaryColor);
 }
 

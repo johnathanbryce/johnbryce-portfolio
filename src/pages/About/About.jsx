@@ -13,6 +13,7 @@ import {
 import Header from '../../components/Header/Header';
 import PagesContainer from '../../components/PagesContainer/PagesContainer';
 
+
 function About() {
   return (
     <div>
@@ -26,6 +27,10 @@ function About() {
             <img className={styles.bio_pic} src={jbBioPic} alt='John Bryce holding a cup of coffee at the beach'/>
           </div>
 
+        {/* content separating line */}
+        <div className={styles.line_content_break_vertical}> </div>
+        {/* content separating line */}
+
           {/* right side content on web / column on mobile */}
           <div className={styles.about_content_container}>
             <div className={styles.text_container}>
@@ -33,7 +38,10 @@ function About() {
               <p> I am a <span className={styles.highlight}> Front-End Web Developer </span> based in Vancouver, BC.</p> 
               <p> I am excited about building fluid, creative, and interactive websites and applications and continually expanding on my coding skillsets. Welcome to my portfolio page!</p>
             </div>
-
+            
+        {/* content separating line */}
+        <div className={styles.line_content_break_horizontal}> </div>
+        {/* content separating line */}
             
             <div className={styles.links_container}>
               <div className={styles.resume_btn_container}>

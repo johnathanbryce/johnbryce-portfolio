@@ -1,58 +1,58 @@
 :root{
-    --backgroundColor: #0A182F; 
+    --backgroundColor: white; /* #0A182F */
 
-    --primaryColor: #CCD6F6;
-    --secondaryColor: #64FFDA;
+    --primaryColor: #0A182F; /* #CCD6F6 */
+    --secondaryColor: #A63446; /* #64FFDA */
 
     --standoutColor: #D72638;
     
-    --fontColor: #CCD6F6;
-    --headerColor: #CCD6F6;
+    --fontColor: #CCD6F6; /* #CCD6F6 */
+    --headerColor: #CCD6F6; /* #CCD6F6 */
 
-    --btnFontColor: #64FFDA;
-    --btnBackgroundColor: #0A182F;
-    --btnHoverColor: rgba(100, 255, 218, 0.25);
+    --iconColor: #A63446;
 
-    --bracketArrowColor: #64FFDA;
+    /* HOME PAGE BTNS */
+    --btnHomeFontColor: white; /* #64FFDA; */
+    --btnHomeFontColorHover: #0A182F; 
+    --btnHomeBackgroundColor: #A63446; /* #0A182F */
+    --btnHomeHoverColor: rgba(166,52,70, 0.75); /* rgba(100, 255, 218, 0.25 */
 
+    /* OTHER PAGES BTNS */
+    --btnFontColor: white; /* #64FFDA; */
+    --btnFontColorHover: #0A182F; 
+    --btnBackgroundColor: #A63446; /* #0A182F */
+    --btnHoverColor: rgba(166,52,70, 0.75); /* rgba(100, 255, 218, 0.25 */
+
+    --bracketArrowColor: #A63446; /* #64FFDA */
+
+    /*
     --sollunaEssence: rgb(186, 161, 204);
     --romp: #561a4c;
     --dailyFeed: #c83e4d;;
     --diceGame: #05bcff;
-
+    */
+    --lineSeperatorColor: rgba(10,24,47, 0.15);
     --lineSize: 0.1rem;
-
     --borderRadius: 1rem;
 
 }
 
-/* OLD COLORS:
+/* DARK MODE / OLD COLOURS
+    --backgroundColor:  #0A182F; 
 
-    --backgroundColor: #121212; 
+    --primaryColor: #CCD6F6; 
+    --secondaryColor: #64FFDA;
 
-    --primaryColor: #FFFFFF;
-    --secondaryColor: #256EFF;
-
-    --standoutColor: #EF3E36;
+    --standoutColor: #D72638;
     
-    --fontColor: #FFFFFF;
-    --headerColor: #FFFFFF;
+    --fontColor: #CCD6F6; 
+    --headerColor: #CCD6F6; 
 
-    --btnFontColor: #FFFFFF;
-    --btnBackgroundColor: #256EFF;
+    --btnFontColor: #64FFDA; 
+    --btnBackgroundColor: #0A182F; 
+    --btnHoverColor:  rgba(100, 255, 218, 0.25); 
 
-    --bracketArrowColor: #877666;
-
-    --sollunaEssence: rgb(186, 161, 204);
-    --romp: #561a4c;
-    --dailyFeed: #c83e4d;;
-    --diceGame: #05bcff;
-
-    --lineSize: 0.1rem;
-
-    --borderRadius: 1rem;
-
-
+    --bracketArrowColor: #64FFDA; 
 
 
 */

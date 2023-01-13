@@ -12,7 +12,7 @@ import { NavLink } from "react-router-dom";
 function Header() {
 
   let activeStyle = {
-    color: '#64FFDA',
+    color: 'rgba(166,52,70, 0.75)',
 
   };
 
@@ -23,9 +23,9 @@ function Header() {
 
       <nav>
         <ul className={styles.nav_container}>
-          <li><a className={styles.nav_link} href="/"> Home </a></li>
           <li><NavLink to="/about" className={styles.nav_link} style={({ isActive }) => isActive ? activeStyle : undefined}>  About </NavLink></li>
           <li><NavLink to="/projects" className={styles.nav_link} style={({ isActive }) => isActive ? activeStyle : undefined}> Projects </NavLink></li>
+          <li><a className={`${styles.nav_link} ${styles.nav_link_main}`} href="/"> {'< JB >'} </a></li>
           <li><NavLink to="/skills" className={styles.nav_link} style={({ isActive }) => isActive ? activeStyle : undefined}> Skills </NavLink></li>
           <li><NavLink to="/contact" className={styles.nav_link} style={({ isActive }) => isActive ? activeStyle : undefined}>  Contact </NavLink></li>
         </ul>

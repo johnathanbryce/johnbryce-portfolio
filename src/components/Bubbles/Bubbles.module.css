@@ -14,12 +14,12 @@
     height: 0.1rem;
     margin: 0 2rem;
     border-radius: 50%;
-    box-shadow: 0 0 0 1rem var(--primaryColor);
+    box-shadow: 0 0 0 1rem var(--secondaryColor);
     z-index: -100;
 }
 
 .bubbles span:nth-child(odd){
-    box-shadow: 0 0 0 1rem #D72638;
+    box-shadow: 0 0 0 1rem var(--secondaryColor);
 }
 
 

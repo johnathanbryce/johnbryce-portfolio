@@ -4,7 +4,7 @@
     justify-content: center;
     align-items: flex-end;
     height: 7rem;
-    border-bottom: var(--lineSize) solid white;
+    border-bottom: var(--lineSize) solid #0A182F;
 }
 
 nav{
@@ -15,14 +15,20 @@ nav{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
     padding: 2rem;
     gap: clamp(2rem, 8%, 16rem);
 }
 
 .nav_link{ 
     font-size: clamp(1.4rem, 2vw, 2rem);
-    color: white;
+    color: #0A182F;
     padding: 2rem;
+}
+
+.nav_link_main{
+    font-size: clamp(2.5rem, 2.25vw, 4rem);
+    color: var(--secondaryColor);
 }
 
 /* Uncomment if bringing back navbar numbers
@@ -44,19 +50,23 @@ nav{
         font-size: .5rem;
     }
     .nav_container{
-        gap: 0.5rem;
+        gap: 1.5rem;
         display: flex;
-        justify-content: flex-start;
         align-items: center;
     }
 
 
 }
 
-/* Galaxy Fold / phones smaller than 300 px */
-@media only screen and (max-width: 300px){
+/* Galaxy Fold / phones smaller than 391 px */
+@media only screen and (max-width: 390px){
     .nav_container{
         gap: 1rem;
+    }
+
+    .nav_link_main{
+        font-size: clamp(1.6rem, 2vw, 3rem);
+
     }
 }
 
