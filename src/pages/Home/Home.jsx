@@ -3,14 +3,13 @@ import {useEffect} from 'react';
 import styles from './Home.module.css';
 
 // Internal Assets
-import logo from '../../images/jbLogo.png';
+
 import LogoBubbles from '../../components/LogoBubbles/LogoBubbles';
 
-// Internal Components
-import BracketIcon from '../../components/BracketIcons/BracketIcon';
+// External Libraries 
+import { useNavigate } from 'react-router-dom';
 
-// External Libraries -- OLD LAYOUT
-/* 
+/* -- OLD LAYOUT
 import { 
     FaLinkedin, FaGithub
 } from "react-icons/fa";
@@ -19,11 +18,13 @@ import { Navigate } from 'react-router-dom';
 
 function Home() {
 
+const navigate = useNavigate()
+
   /* countdown to send user to /about page */
   useEffect(()=>{
     setTimeout(()=>{
-        console.log('reroute')
-        window.location.replace("/about");
+       /* window.location.replace("/about"); */
+       navigate('/about');
     }, 2800 ) 
   }, [])
 

@@ -1,0 +1,61 @@
+/* INTRO & ANIMATION */
+.fullscreen_intro_container{
+    color: var(--secondaryColor);
+    font-size: 10rem;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+  
+.intro_text{
+   /* svg path length: 751.6892700195312 */
+   height: 50vw;
+   width: 80vw;
+   stroke: var(--secondaryColor);
+   stroke-width: 1;
+   stroke-dasharray: 751;
+   stroke-dashoffset: 200;
+   animation: 4s fillSvg linear;
+   
+}
+
+@keyframes fillSvg{
+    0%{
+        stroke-dashoffset: 751;
+    }
+    100%{
+        stroke-dashoffset: 0;
+    }
+}
+
+.fullscreen_intro_container{
+    color: var(--secondaryColor);
+    font-size: 10rem;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+  
+.intro_header{
+    color: var(--secondaryColor);
+    font-size: 10rem;
+    display: flex;
+    align-items: center;
+    
+  
+}
+
+.project_container{
+    display: flex;
+    align-items: center;
+    height: 85vh;
+    border: 2px solid red;
+    
+}
+
+.project_container_left, .project_container_right{
+    border: 0.1rem solid var(--primaryColor);
+    flex: 1;
+}
