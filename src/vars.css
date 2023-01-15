@@ -23,7 +23,11 @@
     --btnBackgroundColor: #A63446; /* #0A182F */
     --btnHoverColor: rgba(166,52,70, 0.75); /* rgba(100, 255, 218, 0.25 */
 
+    /* MISC */
     --bracketArrowColor: #A63446; /* #64FFDA */
+    --lineSeperatorColor: rgba(10,24,47, 0.15);
+    --lineSize: 0.1rem;
+    --borderRadius: 1rem;
 
     /*
     --sollunaEssence: rgb(186, 161, 204);
@@ -31,10 +35,6 @@
     --dailyFeed: #c83e4d;;
     --diceGame: #05bcff;
     */
-    --lineSeperatorColor: rgba(10,24,47, 0.15);
-    --lineSize: 0.1rem;
-    --borderRadius: 1rem;
-
 }
 
 /* DARK MODE / OLD COLOURS

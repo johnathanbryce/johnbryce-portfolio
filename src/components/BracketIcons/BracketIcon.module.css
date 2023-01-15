@@ -1,6 +1,5 @@
 .bracket_container{
     display: flex;
-    
     animation: fade-in-out 2.5s infinite alternate;
     -webkit-animation: fade-inout 2.5s infinite alternate;
     -moz-animation: fade-inout 2.5s infinite alternate;
@@ -10,13 +9,13 @@
 }
 
 .bracket_arrow{
-    font-size: clamp(3rem, 3.5vw, 5rem);
+    font-size: clamp(1rem, 3.5vw, 5rem);
     color: var(--bracketArrowColor);
 
 }
 
 .bracket_line{
-    font-size: clamp(3rem, 3.2vw, 5rem);
+    font-size: clamp(1rem, 3.2vw, 5rem);
     margin: 0 2rem;
     transform: rotate(40deg);
     color: var(--bracketArrowColor);

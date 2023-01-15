@@ -4,6 +4,7 @@ import styles from './Contact.module.css';
 // Components
 import Header from '../../components/Header/Header';
 import PagesContainer from '../../components/PagesContainer/PagesContainer';
+import BracketIcons from '../../components/BracketIcons/BracketIcon';
 
 const EMAIL_CONTACT_EXTERNAL = "https://formsubmit.co/johnathanbryce@gmail.com";
 
@@ -80,7 +81,6 @@ function Contact() {
           </form>
         </div>
       </section>
-      
     </PagesContainer>
     </div>
   )
