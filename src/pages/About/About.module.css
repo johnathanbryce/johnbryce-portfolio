@@ -4,10 +4,11 @@
     font-size: 10rem;
     height: 90vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center; 
 }
-  
+ 
 .intro_text{
    /* svg path length: 751.6892700195312 */
    height: 40vw;
@@ -17,6 +18,7 @@
    stroke-dasharray: 751;
    stroke-dashoffset: 200;
    animation: 5s fillSvg linear;
+   margin-bottom: 5%;
    
 }
 
@@ -28,10 +30,6 @@
         stroke-dashoffset: 0;
     }
 }
-
-
-
-
 
 /* CONTENT CONTAINER */
 .about_container{
@@ -74,12 +72,9 @@
 }
 
 
-.highlight{
-    color: var(--secondaryColor);
-    font-size: clamp(2rem, 3vw, 4rem);
-}
 .highlight_name{
     color: var(--secondaryColor);
+    font-size: clamp(2.5rem, 3vw, 4rem);
 }
 
 /* RESUME BTN & ICONS */
@@ -136,8 +131,14 @@
 
 .icon:hover,
 .icon:active {
-  color: var(--secondaryColor);
-
+  transition: 0.5s;
+  background-color: var(--btnHoverColor);
+  color: var(--btnFontColorHover);
+  outline: 0.3rem solid #0A182F;
+  letter-spacing: 0.5rem;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+       transition: all 0.4s ease-in-out;
 }
 
 

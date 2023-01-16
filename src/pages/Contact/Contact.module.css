@@ -100,7 +100,7 @@ textarea {
     border: var(--lineSize) solid var(--lineSeperatorColor);
     height: 0.1rem;
     position: relative;
-    height: 100%;
+    height: 55vh;
 }
 
 /* FORM SUBMITTED STYLES */
@@ -144,11 +144,9 @@ textarea {
         width: 100%; 
     }
 
-
     .line_content_break{
-        display: none;
+        height: 0;
+        width: 100%;
     }
-
-
 
 }

@@ -30,13 +30,13 @@
 .left_arrow{
     stroke-dasharray: 70;
     stroke-dashoffset: 418;
-    animation: fillSVGLeft 15s linear infinite;
+    animation: fillSVGLeft 16s linear infinite;
 }
 
 .right_arrow{
     stroke-dasharray: 70;
     stroke-dashoffset: -418;
-    animation: fillSVGRight 15s linear infinite;
+    animation: fillSVGRight 16s linear infinite;
 }
 
 .text{

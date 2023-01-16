@@ -3,10 +3,13 @@ import styles from './About.module.css';
 
 // Internal Assets
 import jbBioPic from '../../images/jbBioPic.jpeg';
+import DownArrow from '../../components/DownArrow/DownArrow';
 
 // External Libraries
+import { BrowserRouter } from "react-router-dom";
+import { HashLink as Link } from "react-router-hash-link";
 import { 
-  FaLinkedin, FaGithub
+  FaLinkedin, FaGithub, FaArrowDown
 } from "react-icons/fa";
 
 // Components
@@ -25,6 +28,8 @@ function About() {
       </svg>
     </div>
 
+    <DownArrow />
+
     <PagesContainer>
       <section className={styles.about_container}>
           {/* right side content on web / column on mobile */}
@@ -38,7 +43,7 @@ function About() {
           {/* left side content on web / column on mobile */}
           <div className={styles.about_content_container}>
             <div className={styles.text_container}>
-              <p> My name is<span className={styles.highlight_name}> Johnathan Bryce. </span></p>
+              <p> My name is<span className={styles.highlight_name}> Johnathan Bryce</span>.</p>
               <p> I am a  Front-End Web Developer based in Vancouver, BC.</p> 
               <p> I am excited about building fluid, creative, and interactive websites and applications and continually expanding on my coding skillsets. Welcome to my portfolio page!</p>
             </div>

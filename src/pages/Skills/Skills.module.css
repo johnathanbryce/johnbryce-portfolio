@@ -32,8 +32,9 @@
     'education . location'
     'education . location';
     align-items: center;
-    flex: 3;
+    flex: 2.5;
     padding: 2rem;
+
 }
 
 .skills_grid_container{
