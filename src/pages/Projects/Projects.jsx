@@ -6,10 +6,14 @@ import Header from '../../components/Header/Header';
 import PagesContainer from '../../components/PagesContainer/PagesContainer';
 import DownArrow from '../../components/DownArrow/DownArrow';
 
-// External Libraries
-import { 
- FaArrowDown
-} from "react-icons/fa";
+// Pages
+import ProjectContainer from './ProjectContainer/ProjectContainer';
+
+// Internal Assets
+import sollunnaEssence from '../../images/sollunnaEssence.jpeg'
+import diceGame from '../../images/diceGame.jpeg';
+import dailyFeed from '../../images/dailyFeed.jpeg';
+import romp from '../../images/romp.jpeg'
 
 function Projects() {
   return (
@@ -25,21 +29,46 @@ function Projects() {
     
     <PagesContainer>
 
-    <article className={styles.project_container}>
-      <div className={styles.project_container_left}>
-        <p className={styles.project_overline}> Featured Project: </p>
-        <h3> solLuna Essence </h3>
+    <ProjectContainer
+      flexDirection='normal'
+      title='romp'
+      description='romp is an activity planning social platfrom where you can share what you are doing, or want to do, and then go and do it with people you actually want to do it with.'
+      languages="React, JavaScript, CSS, HTML"
+      img={romp}
+      github='https://github.com/rompAthlete/rompWebsite'
+      />
+   
+      <ProjectContainer
+        flexDirection=''
+        title='solLunna Essence'
+        link="https://www.sollunaessence.com/"
+        description='This website provides current and prospective patrons a landing page to learn about and access services for spiritual healing and guidance techniques from Bio-Energy Healing Practitioner and Intuitive reader, Sydney Fisher.'
+        languages="CSS, SCSS, HTML, JavaScript, jQuery "
+        img={sollunnaEssence}
+        github='https://github.com/johnathanbryce/solLuna-essence'
+      />
 
-      </div>
-      <div className={styles.project_container_right}>
+      <ProjectContainer
+      flexDirection='normal'
+      title='My Daily Feed'
+      link="https://my-daily-feed.netlify.app/"
+      description='A React app which provides curated articles that are tailored towards topics of personal interest that update every two hours. It also provides updates on Vancouver weather.'
+      languages="React, JavaScript, CSS, HTML "
+      img={dailyFeed}
+      github='https://github.com/johnathanbryce/my-daily-feed'
+    />
 
-      </div>
-    </article>
+    <ProjectContainer
+      flexDirection=''
+      title='Dice Game'
+      link="https://dice-game-jb.netlify.app/"
+      description="A dice rolling game against a computer. Highest number after 3 rolls wins! My final individual project for BCIT's COMP2131 - Web Development with Javascript that received a grade of 100%."
+      languages="JavaScript, jQuery, CSS, SCSS, HTML "
+      img={diceGame}
+      github='https://github.com/johnathanbryce/Dice-Game'
+    />
 
 
-
-     
-      
     </PagesContainer>
     </div>
   )

@@ -17,7 +17,6 @@
    stroke-dashoffset: 200;
    animation: 4s fillSvg linear;
    margin-bottom: 3%;
-
 }
 
 @keyframes fillSvg{
@@ -44,18 +43,8 @@
 
 
 
-.project_container{
-    display: flex;
-    align-items: center;
-    height: 85vh;
-    border: 2px solid red;
-    
-}
 
-.project_container_left, .project_container_right{
-    border: 0.1rem solid var(--primaryColor);
-    flex: 1;
-}
+
 
 /* Mobile devices / smaller screens - column layout */
 @media only screen and (max-width: 600px) {
