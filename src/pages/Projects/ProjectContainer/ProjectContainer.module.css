@@ -56,8 +56,7 @@
 }
 
 .project_description{
-
-    background-color: var(--primaryColor);
+    background-color: var(--secondaryColor);
     color: white;
     padding: 2rem;
 }
@@ -109,7 +108,6 @@
 .project_img{
     width: 100%;
     height: 100%;
-    border-radius: var(--borderRadius);
     object-fit: cover;
 }
 
@@ -159,10 +157,6 @@
 
     .project_overline{
         opacity: 0;
-    }
-    .project_title{
-        color: var(--secondaryColor);
-
     }
 }
 

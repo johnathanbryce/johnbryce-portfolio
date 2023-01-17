@@ -29,7 +29,9 @@ function About() {
     <DownArrow />
 
     <PagesContainer>
+    <h2 className={styles.highlight_name}> Johnathan Bryce</h2>
       <section className={styles.about_container}>
+
           {/* right side content on web / column on mobile */}
           <div className={styles.bio_pic_container}>
             <img className={styles.bio_pic} src={jbBioPic} alt='John Bryce holding a cup of coffee at the beach'/>
@@ -39,11 +41,12 @@ function About() {
           <div className={styles.line_content_break_vertical}> </div>
  
           {/* left side content on web / column on mobile */}
+          
           <div className={styles.about_content_container}>
             <div className={styles.text_container}>
-              <p> My name is<span className={styles.highlight_name}> Johnathan Bryce</span>.</p>
-              <p> I am a  Front-End Web Developer based in Vancouver, BC.</p> 
-              <p> I am excited about building fluid, creative, and interactive websites and applications and continually expanding on my coding skillsets. Welcome to my portfolio page!</p>
+              <p> I am a passionate Front-End Web Developer based in Vancouver BC.</p>
+              <p> I am excited about building fluid, creative, and interactive websites and applications. My focus is on continually expanding on my coding skillsets and experience.</p>
+              <p> Welcome to my portfolio page!</p>
             </div>
 
             <div className={styles.line_content_break_horizontal}> </div>
