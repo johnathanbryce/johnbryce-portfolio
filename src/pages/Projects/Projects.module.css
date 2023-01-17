@@ -41,14 +41,21 @@
     0%{opacity: 0} 100%{opacity: 1}
 }
 
-
-
-
-
+.line_content_break_horizontal{
+    border: var(--lineSize) solid var(--lineSeperatorColor);
+    height: 0.1rem;
+    margin: 0 auto;
+    position: relative;
+    width: 80%;
+    height: 0%;
+}
 
 /* Mobile devices / smaller screens - column layout */
 @media only screen and (max-width: 600px) {
     .down_arrow{
         bottom: 16rem;
+    }
+    .line_content_break_horizontal{
+        display: none;
     }
 }

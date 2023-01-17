@@ -12,6 +12,7 @@ import {
 
 function ProjectContainer({title, description, languages, img, flexDirection, link, github}) {
   return (
+  <div>
     <article className={styles.project_container}>
       <div className={flexDirection === 'normal' ? styles.project_overlay_wrapper_normal : styles.project_overlay_wrapper_reverse}>
         <div className={flexDirection === 'normal' ? styles.project_container_text : styles.project_container_text_reverse}>
@@ -30,6 +31,9 @@ function ProjectContainer({title, description, languages, img, flexDirection, li
       </a>
       </div>
   </article>
+  </div>
+
+  
   )
 }
 
