@@ -18,7 +18,7 @@ const navigate = useNavigate()
     setTimeout(()=>{
        /* window.location.replace("/about"); */
        navigate('/about');
-    }, 2500 ) 
+    }, 250000 ) 
   }, [])
 
 
