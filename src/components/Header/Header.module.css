@@ -39,14 +39,15 @@ nav{
 
 /* Phones & Small Screens */
 @media only screen and (max-width: 600px){
+    .header_container{
+        height: 7.5rem
+    }
     .nav_link{
         padding: 0.5rem;
     }
 
     .nav_link_main{
-        position: absolute;
-        left: 40%;
-        top: 0%;
+        display: none;
     }
 
     .nav_number{
@@ -66,11 +67,6 @@ nav{
 @media only screen and (max-width: 390px){
     .nav_container{
         gap: 1rem;
-    }
-
-    .nav_link_main{
-        font-size: clamp(1.6rem, 2vw, 3rem);
-
     }
 }
 
