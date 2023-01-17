@@ -2,10 +2,12 @@
     display: flex;
     justify-content: center;
     height: 100vh;
+    width: 100vw;
     /* NECESSARY FOR BUBBLES ANIMATION TO WORK: */
     overflow: hidden;
     z-index: 100;
     float: inline-start;
+
 }
 
 .home_flex_wrapper{
@@ -13,7 +15,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
 }
 
 /* Lines/Logo Animations & Styles */
