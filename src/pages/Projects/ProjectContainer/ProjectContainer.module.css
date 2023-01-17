@@ -3,7 +3,6 @@
     align-items: center;
     height: 100vh;
     margin: -6.5rem 0;
-
 }
 
 .project_overlay_wrapper_normal{
@@ -57,7 +56,7 @@
 }
 
 .project_description{
-    font-size: clamp(1rem, 2.5vw, 2rem);
+
     background-color: var(--primaryColor);
     color: white;
     padding: 2rem;
@@ -70,12 +69,12 @@
 }
 
 .project_languages{
-    font-size: clamp(1rem, 2.5vw, 2rem);
+    font-size: clamp(1.2rem, 2.5vw, 2rem);
     width: 70%;   
 }
 
 .project_languages_reverse{
-    font-size: clamp(1rem, 2.5vw, 2rem);
+    font-size: clamp(1.2rem, 2.5vw, 2rem);
     width: 70%;   
     text-align: right;
 }
@@ -117,9 +116,6 @@
 
 /* Mobile devices / smaller screens - column layout */
 @media only screen and (max-width: 600px) {
-    .project_container{
-        margin-bottom: -70%;
-    }
     .project_overlay_wrapper_normal, .project_overlay_wrapper_reverse{
         display: flex;
         flex-direction: column;
@@ -152,6 +148,7 @@
         position: relative;
         bottom: -7%;
     }
+
 }
 
 /* Mobile devices */
@@ -169,3 +166,10 @@
     }
 }
 
+/* Small mobile devices: galaxy fold, iphone se, etc. */
+@media only screen and (max-width: 389px) {
+    .project_container{
+        margin-bottom: -70%;
+    }
+
+}

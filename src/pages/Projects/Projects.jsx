@@ -13,7 +13,8 @@ import ProjectContainer from './ProjectContainer/ProjectContainer';
 import sollunnaEssence from '../../images/sollunnaEssence.jpeg'
 import diceGame from '../../images/diceGame.jpeg';
 import dailyFeed from '../../images/dailyFeed.jpeg';
-import romp from '../../images/romp.jpeg'
+import romp from '../../images/romp.jpeg';
+import oldPortfolio from '../../images/portfolioOld.jpeg';
 
 function Projects() {
   return (
@@ -30,9 +31,10 @@ function Projects() {
     <PagesContainer>
         <ProjectContainer
           flexDirection='normal'
+          featuredType='Work'
           title='romp'
           link={'https://rompathlete.com/'}
-          description='romp is an activity planning social platfrom where you can share what you are doing, or want to do, and then go and do it with people you actually want to do it with.'
+          description='Romp is an activity planning social platform that allows you to create and share activities and events. You can broadcast what you are doing, when you are doing it, and then go and do it with the people you actually want to do it with in your area!'
           languages="React, JavaScript, CSS, HTML"
           img={romp}
           github='https://github.com/rompAthlete/rompWebsite'
@@ -42,6 +44,7 @@ function Projects() {
 
         <ProjectContainer
           flexDirection=''
+          featuredType='Work'
           title='solLunna Essence'
           link="https://www.sollunaessence.com/"
           description='This website provides current and prospective patrons a landing page to learn about and access services for spiritual healing and guidance techniques from Bio-Energy Healing Practitioner and Intuitive reader, Sydney Fisher.'
@@ -50,10 +53,11 @@ function Projects() {
           github='https://github.com/johnathanbryce/solLuna-essence'
         />
 
-      <div className={styles.line_content_break_horizontal}> </div>
+        <div className={styles.line_content_break_horizontal}> </div>
 
-          <ProjectContainer
+        <ProjectContainer
           flexDirection='normal'
+          featuredType='Project'
           title='My Daily Feed'
           link="https://my-daily-feed.netlify.app/"
           description='A React app which provides curated articles that are tailored towards topics of personal interest that update every two hours. It also provides updates on Vancouver weather.'
@@ -61,16 +65,32 @@ function Projects() {
           img={dailyFeed}
           github='https://github.com/johnathanbryce/my-daily-feed'
         />
+
         <div className={styles.line_content_break_horizontal}> </div>
-          <ProjectContainer
-            flexDirection=''
-            title='Dice Game'
-            link="https://dice-game-jb.netlify.app/"
-            description="A dice rolling game against a computer. Highest number after 3 rolls wins! My final individual project for BCIT's COMP2131 - Web Development with Javascript that received a grade of 100%."
-            languages="JavaScript, jQuery, CSS, SCSS, HTML "
-            img={diceGame}
-            github='https://github.com/johnathanbryce/Dice-Game'
-          />
+          
+        <ProjectContainer
+          flexDirection=''
+          featuredType='Project'
+          title='Dice Game'
+          link="https://dice-game-jb.netlify.app/"
+          description="A dice rolling game against a computer. Highest number after 3 rolls wins! My final individual project for BCIT's COMP2131 - Web Development with Javascript that received a grade of 100%."
+          languages="JavaScript, jQuery, CSS, SCSS, HTML "
+          img={diceGame}
+          github='https://github.com/johnathanbryce/Dice-Game'
+         />
+
+        <div className={styles.line_content_break_horizontal}> </div>
+
+        <ProjectContainer
+          flexDirection='normal'
+          featuredType='Project'
+          title='Portfolio - Old Version'
+          link="https://johnbrycewebdevelopment-old.netlify.app/"
+          description="My original web development portfolio site made in early 2022. Go easy on me, it was my first time!"
+          languages="React, JavaScript, CSS, HTML "
+          img={oldPortfolio}
+          github='https://github.com/johnathanbryce/jbryce-portfolio'
+        />
       </PagesContainer>
     </div>
   )

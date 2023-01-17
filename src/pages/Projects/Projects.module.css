@@ -58,4 +58,9 @@
     .line_content_break_horizontal{
         display: none;
     }
+
+    .last_project{
+        margin-bottom: 0;
+        border: 1px solid red;
+    }
 }
