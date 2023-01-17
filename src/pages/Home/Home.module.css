@@ -2,7 +2,6 @@
     display: flex;
     justify-content: center;
     height: 100vh;
-
     /* NECESSARY FOR BUBBLES ANIMATION TO WORK: */
     overflow: hidden;
     z-index: 100;
@@ -22,8 +21,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50vw;
-    height: 50vh;
 }
 
 /* RIGHT ARROW */

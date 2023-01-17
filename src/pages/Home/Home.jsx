@@ -9,13 +9,6 @@ import LogoBubbles from '../../components/LogoBubbles/LogoBubbles';
 // External Libraries 
 import { useNavigate } from 'react-router-dom';
 
-/* -- OLD LAYOUT
-import { 
-    FaLinkedin, FaGithub
-} from "react-icons/fa";
-import { Navigate } from 'react-router-dom';
-*/
-
 function Home() {
 
 const navigate = useNavigate()
