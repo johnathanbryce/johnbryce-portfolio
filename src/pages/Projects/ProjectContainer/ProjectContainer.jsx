@@ -10,13 +10,13 @@ import {
 
 
 
-function ProjectContainer({title, description, languages, img, flexDirection, link, github}) {
+function ProjectContainer({title, description, languages, img, flexDirection, link, github, featuredType}) {
   return (
   <div>
     <article className={styles.project_container}>
       <div className={flexDirection === 'normal' ? styles.project_overlay_wrapper_normal : styles.project_overlay_wrapper_reverse}>
         <div className={flexDirection === 'normal' ? styles.project_container_text : styles.project_container_text_reverse}>
-        <p className={styles.project_overline}> Featured Project </p>
+        <p className={styles.project_overline}> Featured {featuredType} </p>
         <a href={link} target="_blank" rel='noreferrer'><h3 className={styles.project_title}> {title} </h3> </a>
         <p className={styles.project_description}> {description}</p>
         <p className={flexDirection === 'normal' ? styles.project_languages : styles.project_languages_reverse}> {languages}</p>

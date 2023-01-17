@@ -1,9 +1,6 @@
 import React from 'react';
 import styles from './Header.module.css';
 
-// Internal Assets
-import logo from '../../images/jbLogo.png';
-
 // External Assets
 import { NavLink } from "react-router-dom";
 

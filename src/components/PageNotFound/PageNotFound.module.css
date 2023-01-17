@@ -1,0 +1,23 @@
+.notfound_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    gap: 4rem;
+    padding: 1rem;
+}
+
+.notfound_links_wrapper{
+    display: flex;
+    gap: 5rem;
+}
+
+.notfound_link{
+    font-size: clamp(2rem, 4vw, 5rem)
+}
+
+.notfound_link:hover{
+    color: var(--secondaryColor);
+}

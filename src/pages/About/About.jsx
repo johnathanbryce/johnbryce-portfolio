@@ -61,7 +61,7 @@ function About() {
                 </button>
               </div>
               <div className={styles.icons_container}>
-                <a href="https://github.com/johnathanbryce" target="_blank" rel="noreferrer"><FaLinkedin className={styles.icon}/></a>
+                <a href="https://www.linkedin.com/in/johnathanbryce/" target="_blank" rel="noreferrer"><FaLinkedin className={styles.icon}/></a>
                 <a href="https://github.com/johnathanbryce" target="_blank" rel="noreferrer"><FaGithub className={styles.icon}/></a>
               </div>
             </div>
