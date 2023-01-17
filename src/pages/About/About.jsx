@@ -6,10 +6,8 @@ import jbBioPic from '../../images/jbBioPic.jpeg';
 import DownArrow from '../../components/DownArrow/DownArrow';
 
 // External Libraries
-import { BrowserRouter } from "react-router-dom";
-import { HashLink as Link } from "react-router-hash-link";
 import { 
-  FaLinkedin, FaGithub, FaArrowDown
+  FaLinkedin, FaGithub, 
 } from "react-icons/fa";
 
 // Components
