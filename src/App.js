@@ -9,8 +9,8 @@ import Projects from './pages/Projects/Projects';
 import Skills from './pages/Skills/Skills';
 import NotFound from './components/PageNotFound/PageNotFound';
 
-// External Packages       <Home />
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+// External Packages     
+import { Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
