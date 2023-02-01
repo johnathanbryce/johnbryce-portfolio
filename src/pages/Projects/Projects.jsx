@@ -1,4 +1,3 @@
-import React from 'react';
 import styles from './Projects.module.css';
 
 // Components
@@ -16,8 +15,8 @@ import dailyFeed from '../../images/dailyFeed.jpeg';
 import romp from '../../images/romp.jpeg';
 import oldPortfolio from '../../images/portfolioOld.jpeg';
 
-
 function Projects() {
+
   return (
     <div id="projects">
       <SectionBreakTitle header='check out my work.' />   
