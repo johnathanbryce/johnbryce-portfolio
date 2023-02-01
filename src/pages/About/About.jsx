@@ -1,4 +1,4 @@
-import React from 'react';
+import {useRef} from 'react';
 import styles from './About.module.css';
 
 // Internal Assets
@@ -15,7 +15,10 @@ import Header from '../../components/Header/Header';
 import PagesContainer from '../../components/PagesContainer/PagesContainer';
 
 
+
 function About() {
+
+
   return (
     <div>
       
@@ -74,6 +77,7 @@ function About() {
 
       
     </PagesContainer>
+
     </div>
   )
 }

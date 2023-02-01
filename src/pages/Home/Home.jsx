@@ -9,6 +9,8 @@ import LogoBubbles from '../../components/LogoBubbles/LogoBubbles';
 // External Libraries 
 import { useNavigate } from 'react-router-dom';
 
+
+
 function Home() {
 
 const navigate = useNavigate()
@@ -49,6 +51,7 @@ const navigate = useNavigate()
             </section>
   
         </div>
+
     </div>
   )
 }
