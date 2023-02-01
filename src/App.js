@@ -16,10 +16,10 @@ function App() {
   return (
         <Routes>
           <Route path='/' element={<Home/>} exact/>
-          <Route path='/contact' element={<Contact/>} exact/>
+{/*           <Route path='/contact' element={<Contact/>} exact/>
           <Route path='/about' element={<About/>} exact/>
           <Route path='/projects' element={<Projects/>} exact/>
-          <Route path='/skills' element={<Skills/>} exact/>
+          <Route path='/skills' element={<Skills/>} exact/> */}
           <Route path='*' element={<NotFound />}/>
         </Routes>
   );

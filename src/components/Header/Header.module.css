@@ -4,6 +4,10 @@
     justify-content: space-around;
     align-items: flex-end;
     height: 10rem;
+/*     position: fixed;
+    width: 100%;
+    z-index: 10; */
+
 }
 
 nav{
@@ -20,8 +24,14 @@ nav{
 }
 
 .nav_link{ 
-    font-size: clamp(1.4rem, 2vw, 2rem);
+    font-size: clamp(1.8rem, 2vw, 2rem);
     color: #0A182F;
+
+}
+
+.nav_link:hover{
+    color: var(--secondaryColor);
+    
 }
 
 .nav_link_main{
@@ -40,7 +50,17 @@ nav{
 /* Phones & Small Screens */
 @media only screen and (max-width: 600px){
     .header_container{
-        height: 7.5rem
+        height: 7.5rem;
+        border-bottom: 1px solid var(--lineSeperatorColor);
+    }
+    nav{
+        width: 100%;
+    }
+    .nav_container{
+        gap: 1.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;   
     }
     .nav_link{
         padding: 0.5rem;
@@ -54,19 +74,20 @@ nav{
         display: none;
         font-size: .5rem;
     }
-    .nav_container{
-        gap: 1.5rem;
-        display: flex;
-        align-items: center;
-    }
-
 
 }
 
 /* Galaxy Fold / phones smaller than 391 px */
 @media only screen and (max-width: 390px){
+    nav{
+        width: 85%;
+    }
     .nav_container{
-        gap: 1rem;
+        gap: 0rem;
+        justify-content: center;
+    }
+    .nav_link{
+        font-size: 1.4rem;
     }
 }
 

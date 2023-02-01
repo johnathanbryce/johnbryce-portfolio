@@ -1,17 +1,15 @@
-import { 
-     FaArrowDown
-  } from "react-icons/fa";
+import styles from './DownArrow.module.css'
 
-  import styles from './DownArrow.module.css'
+// External Assets
+import {  FaArrowDown } from "react-icons/fa";
 
 function DownArrow() {
 
-    const scrollBottom = () =>{
-        window.scrollTo({top: 1000, behavior: 'smooth'});
-     };
-
   return (
-    <FaArrowDown onClick={scrollBottom}  className={styles.down_arrow}/>
+    <>
+      <FaArrowDown  className={styles.down_arrow}/>
+    </>
+    
   )
 }
 

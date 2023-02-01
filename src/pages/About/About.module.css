@@ -2,17 +2,17 @@
 .fullscreen_intro_container{
     color: var(--secondaryColor);
     font-size: 10rem;
-    height: 90vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center; 
 }
  
-.intro_text{
+.intro_text_svg{
    /* svg path length: 751.6892700195312 */
    height: 40vw;
-   width: 30vw;
+   width: 40vw;
    stroke: var(--secondaryColor);
    stroke-width: 1;
    stroke-dasharray: 751;
@@ -32,6 +32,23 @@
 }
 
 /* CONTENT CONTAINER */
+.about_container{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+    margin-top: 10%;
+    height: 100vh;
+
+}
+
+.about_flex_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+    gap: 2rem;
+}
 
 .highlight_name{
     color: var(--secondaryColor);
@@ -39,14 +56,6 @@
     text-align: center;
     width: 100%;
     margin-bottom: 3rem;
-}
-
-
-.about_container{
-    display: flex;
-    flex-direction: row-reverse;
-    gap: 2rem;
-
 }
 
 /* BIO PIC CONTAINER -- right side on web / column on mobile */
@@ -86,7 +95,7 @@
     justify-content: space-between;
     align-items: center;
     gap: 4rem;
-    width: 80%;
+    width: 100%;
 }
 
 .resume_btn_container{
@@ -162,15 +171,21 @@
 }
 
 /* Mobile devices / smaller screens - column layout */
-@media only screen and (max-width: 600px) {
-    .about_container{
+@media only screen and (max-width: 800px) {
+    .intro_text_svg{
+        width: 60vw;
+    }
+    .about_container, .about_flex_container{
         display: flex;
+        height: inherit;
         flex-direction: column;
-        gap: 4rem;
+        gap: 1rem;
+        margin-bottom: 20%;
     }
 
+
     .bio_pic, .bio_pic_container{
-        width: 90%;
+        width: 100%;
     }
 
     .text_container{

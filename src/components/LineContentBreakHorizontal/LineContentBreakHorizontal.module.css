@@ -1,0 +1,9 @@
+.line_content_break_horizontal{
+    border: var(--lineSize) solid var(--lineSeperatorColor);
+    height: 0.1rem;
+    margin: 0 auto;
+    position: relative;
+    width: 80%;
+    height: 0%;
+   
+}

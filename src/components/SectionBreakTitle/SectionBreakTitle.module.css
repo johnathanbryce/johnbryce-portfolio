@@ -1,0 +1,31 @@
+/* INTRO & ANIMATION */
+.section_break_container{
+    color: var(--secondaryColor);
+    text-align: center;
+    margin: 0 auto;
+    background-color: var(--sectionBreakColor);
+    height: 15rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+} 
+.section_text{
+   color: var(--backgroundColor);
+
+/*    stroke: var(--backgroundColor);
+   stroke-width: 1;
+   stroke-dasharray: 751;
+   stroke-dashoffset: 200;
+   animation: 4s fillSvg linear;
+   margin: 0 auto; */
+}
+/*  @keyframes fillSvg{
+    0%{
+        stroke-dashoffset: 751;
+    }
+    100%{
+        stroke-dashoffset: 0;
+    }
+} */
+

@@ -6,7 +6,7 @@
     height: 100vh;
     text-align: center;
     gap: 4rem;
-    padding: 1rem;
+    padding: 2rem;
 }
 
 .notfound_links_wrapper{
@@ -15,7 +15,8 @@
 }
 
 .notfound_link{
-    font-size: clamp(2rem, 4vw, 5rem)
+    margin-top: 2rem;
+    font-size: clamp(5rem, 4vw, 7rem)
 }
 
 .notfound_link:hover{

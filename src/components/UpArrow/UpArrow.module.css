@@ -1,11 +1,12 @@
-.down_arrow{
+.up_arrow{
     color: var(--primaryColor);
     font-size: 3.5rem;
     animation: animateArrow 4s infinite;
     margin: 0 auto;
     position: relative;
-    bottom: 7rem;
+    top: 0rem;
     cursor: pointer;
+    
 }
 
 @keyframes animateArrow{
@@ -13,7 +14,8 @@
 }
 
 @media only screen and (max-width: 600px){
-    .down_arrow{
-        top: 13rem;
+    .up_arrow{
+        margin-top: 2rem;
+        margin-bottom: 2rem;
     }
 }
