@@ -1,8 +1,7 @@
 .project_container{
     display: flex;
     align-items: center;
-    height: 100vh;
-    margin: -6.5rem 0;
+    height: 80vh;
 }
 
 .project_overlay_wrapper_normal{
@@ -47,7 +46,7 @@
 }
 
 .project_title{
-    font-size: clamp(3.25rem, 3vw, 4.5rem);
+    font-size: clamp(3.25rem, 3.5vw, 7rem);
 }
 
 .project_title:hover{
@@ -102,7 +101,7 @@
 }
 
 .project_container_img:hover, .project_container_img_reverse:hover{
-    opacity:1
+    opacity: 1; 
 }
 
 .project_img{
@@ -113,57 +112,72 @@
 
 
 /* Mobile devices / smaller screens - column layout */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
+    .project_container{
+        align-items: center;
+        height: 50vh;
+        margin: 0 1rem;
+    }
     .project_overlay_wrapper_normal, .project_overlay_wrapper_reverse{
         display: flex;
         flex-direction: column;
     }
 
+    .project_overline{
+        margin: 1.2rem;
+    }
+
     .project_container_text, .project_container_text_reverse{
-        align-items: flex-start;
+        align-items: center;
         left: 0;
     }
 
     .project_languages, .project_languages_reverse{
         width: 100%;
-        align-items: flex-start;
-        text-align: left;
+        text-align: center;
         margin-top: 1rem;
+
     }
 
     .project_description{
         padding: 1.2rem;
+        
     }
 
     .project_container_img, .project_container_img_reverse{
         left: 0;
-        bottom: 35%;
-        opacity: 0.1;
+        bottom: 37rem;
+        opacity: 0.08;
+    }
 
+    .project_img{
+        height: 30rem;
     }
 
     .project_external_links{
         position: relative;
-        bottom: -7%;
+        bottom: 0.4rem;
+        padding: 1.5rem;
     }
+
 
 }
 
 /* Mobile devices */
-@media only screen and (max-width: 450px){
-    .project_container{
-        margin-bottom: -100%;
-    }
-
+@media only screen and (max-width: 500px){
     .project_overline{
         opacity: 0;
+        display: none;
+       
+        
     }
 }
 
 /* Small mobile devices: galaxy fold, iphone se, etc. */
 @media only screen and (max-width: 389px) {
-    .project_container{
-        margin-bottom: -70%;
+    .project_container_img, .project_container_img_reverse{
+        left: 0;
+        bottom: 32rem;
+        opacity: 0.1;
     }
-
 }

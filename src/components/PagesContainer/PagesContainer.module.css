@@ -1,12 +1,15 @@
 .pages_container{ 
     display: flex;
     flex-direction: column;
+
     padding: 2rem;
-    margin-top: 5%;
-    margin: 5% 2% 0 2%;
+    margin: 2% 7% 0 7%;
 }
+
 
 /* Mobile devices / smaller screens - column layout */
 @media only screen and (max-width: 600px){
-
+    .pages_container{
+        margin: 0% 2%;
+    }
 }

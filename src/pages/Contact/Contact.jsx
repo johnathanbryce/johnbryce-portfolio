@@ -4,7 +4,11 @@ import styles from './Contact.module.css';
 // Components
 import Header from '../../components/Header/Header';
 import PagesContainer from '../../components/PagesContainer/PagesContainer';
-import BracketIcons from '../../components/BracketIcons/BracketIcon';
+import SectionBreakTitle from '../../components/SectionBreakTitle/SectionBreakTitle';
+import UpArrow from '../../components/UpArrow/UpArrow';
+
+// External Libraries
+import { HashLink as Link } from "react-router-hash-link";
 
 const EMAIL_CONTACT_EXTERNAL = "https://formsubmit.co/johnathanbryce@gmail.com";
 
@@ -31,13 +35,13 @@ function Contact() {
     );
   }
   return (
-    <div>
-      
-    <Header />
+    <div id="contact">
+    <SectionBreakTitle header='get in touch.' />
     <PagesContainer>
-      <section className={styles.contact_container}>
+    <Link to="#about"><UpArrow /></Link>
+      <section  className={styles.contact_container}>
         <div className={styles.text_container}>
-          <h2> Get In Touch </h2>
+          {/* <h2> Get In Touch </h2> */}
           <p> I am currently interested in web development opportunities. If you have other requests or questions, please do not hesitate to reach out! </p>
           <div className={styles.text_contact_info}>
             <div>

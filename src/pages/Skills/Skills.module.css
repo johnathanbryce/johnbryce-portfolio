@@ -1,7 +1,6 @@
-
 .skills_education_container{
     display: flex;
-    height: 100%;
+    height: 90vh;
     gap: 10rem;
 }
 
@@ -13,6 +12,10 @@
 
 .skills_header{
     justify-self: flex-start;
+}
+
+.education_insititution_name{
+    width: 20rem;
 }
 
 .education_grid_container p a{
@@ -33,7 +36,7 @@
     'education . location';
     align-items: center;
     flex: 2.5;
-    padding: 2rem;
+    padding: 4rem;
 
 }
 
@@ -44,7 +47,6 @@
     justify-items: center;
     align-items: center;
     padding: 2rem;
-    gap: 3rem;
 }
 
 .skills_flex{
@@ -80,7 +82,13 @@
     }
 
     .education_grid_container{
-        gap: 2rem;
+        gap: 1rem;
+        padding: 2rem;
+    }
+
+    .education_insititution_name{
+        width: inherit;
+        font-size: 1.2rem;
     }
 
     .line_content_break{
@@ -90,5 +98,16 @@
     .skills_grid_container{
         gap: 0.5rem;
         line-height: 1;
+    }
+    .skills_flex{
+        height: 4.2rem;
+    }
+
+}
+
+/* Galaxy Fold / iphoneSE -- phones smaller than 391 px */
+@media only screen and (max-width: 391px){
+    .skills_flex{
+        height: 3rem;
     }
 }
