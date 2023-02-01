@@ -1,4 +1,5 @@
 import styles from './About.module.css';
+import { useEffect } from 'react';
 
 // Internal Assets
 import jbBioPic from '../../images/jbBioPic.jpeg';
@@ -9,6 +10,8 @@ import {
   FaLinkedin, FaGithub
 } from "react-icons/fa";
 import { HashLink as Link } from "react-router-hash-link";
+import { motion, useAnimation } from "framer-motion"
+import {useInView} from 'react-intersection-observer';
 
 // Components
 import PagesContainer from '../../components/PagesContainer/PagesContainer';
@@ -17,6 +20,35 @@ import PagesContainer from '../../components/PagesContainer/PagesContainer';
 
 
 function About() {
+  const [ref, inView] = useInView({
+    threshold: 0 // 95% of the parent should be in view before initiating animations
+  });
+
+
+  const animateHeader = useAnimation();
+
+
+  useEffect(() => {
+      if(inView){
+        animateHeader.start({
+          transform: `rotate(0deg)`,
+          transition:{
+            type: 'ease-in-out', duration: 0.5,  
+          }
+        })
+      }
+      if(!inView){
+        animateHeader.start({
+          transform: `rotate(180deg)`,
+       
+          transition:{
+            type: 'ease-in-out', duration: 0.5,  
+          },
+
+         
+        })
+      }
+  }, [inView])
   return (
     <div>
     <div className={styles.fullscreen_intro_container}>
@@ -27,8 +59,8 @@ function About() {
     </div>
     
     <PagesContainer >
-      <section id="about" className={styles.about_container}>
-        <h2   className={styles.highlight_name}> Johnathan Bryce</h2>
+      <section ref={ref} id="about" className={styles.about_container}>
+        <motion.h2 animate={animateHeader}  className={styles.highlight_name}> Johnathan Bryce</motion.h2>
         <div className={styles.about_flex_container}>
           
            {/* right side content on web / column on mobile */}

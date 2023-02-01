@@ -1,19 +1,54 @@
-import React from 'react';
+import {useEffect} from 'react';
 import styles from './ProjectContainer.module.css';
 
 // External Libraries
 import { 
    FaGithub, FaExternalLinkAlt
 } from "react-icons/fa";
-
-
-
+import { motion, useAnimation } from "framer-motion"
+import {useInView} from 'react-intersection-observer';
 
 
 function ProjectContainer({title, description, languages, img, flexDirection, link, github, featuredType}) {
+
+  const [ref, inView] = useInView({
+    threshold: 0.95 // 95% of the parent should be in view before initiating animations
+  });
+
+
+  const animateProject = useAnimation();
+
+
+  useEffect(() => {
+      if(inView){
+        animateProject.start({
+          opacity: 1,
+          x: 0,
+          transform: `scale(1)`,
+          transition:{
+            type: 'ease-in-out', duration: 0.25,  
+          }
+        })
+      }
+      if(!inView){
+        animateProject.start({
+          opacity: 0.25,
+          transform: `scale(0.8)`,
+          transition:{
+            type: 'ease-in-out', duration: 0.25,  
+          },
+          x: 0,
+         
+        })
+      }
+  }, [inView])
+
+
+
   return (
-  <div>
-    <article className={styles.project_container}>
+  <div >
+    <div ref={ref}> </div>
+    <motion.article className={styles.project_container} animate={animateProject}>
       <div className={flexDirection === 'normal' ? styles.project_overlay_wrapper_normal : styles.project_overlay_wrapper_reverse}>
         <div className={flexDirection === 'normal' ? styles.project_container_text : styles.project_container_text_reverse}>
         <p className={styles.project_overline}> Featured {featuredType} </p>
@@ -30,7 +65,7 @@ function ProjectContainer({title, description, languages, img, flexDirection, li
               <img src={img} alt='' className={styles.project_img}/> 
       </a>
       </div>
-  </article>
+  </motion.article>
   </div>
 
   
