@@ -24,7 +24,7 @@ nav{
 }
 
 .nav_link{ 
-    font-size: clamp(1.8rem, 2vw, 2rem);
+    font-size: clamp(1.6rem, 2vw, 2rem);
     color: #0A182F;
 
 }
@@ -60,7 +60,7 @@ nav{
         gap: 1.5rem;
         display: flex;
         align-items: center;
-        justify-content: space-between;   
+        justify-content: space-evenly;   
     }
     .nav_link{
         padding: 0.5rem;
@@ -77,17 +77,16 @@ nav{
 
 }
 
-/* Galaxy Fold / phones smaller than 391 px */
-@media only screen and (max-width: 390px){
+/* Galaxy Fold / phones smaller than 380 px */
+@media only screen and (max-width: 380px){
     nav{
         width: 85%;
     }
     .nav_container{
         gap: 0rem;
-        justify-content: center;
     }
     .nav_link{
-        font-size: 1.4rem;
+        font-size: 1.6rem;
     }
 }
 

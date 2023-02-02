@@ -11,7 +11,7 @@
 
     --iconColor: #A63446;
 
-    --sectionBreakColor: #5762D5;
+    --sectionBreakColor: rgba(166,52,70, 0.8); /* rgba(166,52,70, 0.5) *.
 
     /* HOME PAGE BTNS */
     --btnHomeFontColor: white; /* #64FFDA; */

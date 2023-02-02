@@ -28,7 +28,7 @@
 
 .education_grid_container{
     display: grid;
-    grid-template-columns: 5fr 1fr 1fr;
+    grid-template-columns: 3fr 1fr 1fr;
     grid-template-areas:
     'header header header'
     'education . location'
@@ -36,7 +36,8 @@
     'education . location';
     align-items: center;
     flex: 2.5;
-    padding: 4rem;
+    padding: 2rem;
+    gap: 7rem;
 
 }
 
@@ -58,6 +59,13 @@
 
 .skills_flex:nth-child(even){
     flex-direction: row-reverse;
+}
+
+.horizontal_line_education{
+    border: var(--lineSize) solid var(--secondaryColor);
+    height: 0.1rem;
+    position: relative;
+    width: 7rem;
 }
 
 .horizontal_line{
@@ -89,6 +97,10 @@
     .education_insititution_name{
         width: inherit;
         font-size: 1.2rem;
+    }
+
+    .horizontal_line_education{
+        width: 20%;
     }
 
     .line_content_break{
