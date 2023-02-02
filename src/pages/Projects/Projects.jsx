@@ -27,7 +27,7 @@ function Projects() {
             featuredType='Work'
             title='romp'
             link={'https://rompathlete.com/'}
-            description='Romp is an activity planning social platform that allows you to create and share activities and events. You can broadcast what you are doing, when you are doing it, and then go and do it with the people you actually want to do it with in your area!'
+            description='Romp is an activity planning social platform that allows you to create and share activities and events. You can broadcast what you are doing, when you are doing it, and then go and do it with the people you actually want to do it with, in your area!'
             languages="React, JavaScript, CSS, HTML"
             img={romp}
             github='https://github.com/rompAthlete/rompWebsite'
@@ -36,7 +36,7 @@ function Projects() {
           <ProjectContainer
             flexDirection=''
             featuredType='Work'
-            title='solLunna Essence'
+            title='SolLunna Essence'
             link="https://www.sollunaessence.com/"
             description='This website provides current and prospective patrons a landing page to learn about and access services for spiritual healing and guidance techniques from Bio-Energy Healing Practitioner and Intuitive reader, Sydney Fisher.'
             languages="CSS, SCSS, HTML, JavaScript, jQuery "

@@ -73,14 +73,17 @@
         bottom: 16rem;
     } 
 */
-    .line_content_break_horizontal{
+/*     .line_content_break_horizontal{
         display: none;
-    }
+    } */
 }
 
 /* Small mobile devices: galaxy fold, iphone se, etc. */
 @media only screen and (max-width: 389px) {
     .projects_container{
         gap: 9rem;
+    }
+    .line_content_break_horizontal{
+        display: none;
     }
 }

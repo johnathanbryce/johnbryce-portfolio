@@ -2,9 +2,9 @@
 .section_break_container{
     color: var(--secondaryColor);
     text-align: center;
-    margin: 0 auto;
+    margin: 2rem 0;
     background-color: var(--sectionBreakColor);
-    height: 15rem;
+    height: 10rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -12,6 +12,7 @@
 } 
 .section_text{
    color: var(--backgroundColor);
+   /* color: var(--primaryColor); */
 
 /*    stroke: var(--backgroundColor);
    stroke-width: 1;

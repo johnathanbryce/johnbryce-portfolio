@@ -21,34 +21,30 @@ import PagesContainer from '../../components/PagesContainer/PagesContainer';
 
 function About() {
   const [ref, inView] = useInView({
-    threshold: 0 // 95% of the parent should be in view before initiating animations
+    threshold: 0 // 
   });
 
-
   const animateHeader = useAnimation();
-
 
   useEffect(() => {
       if(inView){
         animateHeader.start({
-          transform: `rotate(0deg)`,
+          opacity: 1,
           transition:{
-            type: 'ease-in-out', duration: 0.5,  
-          }
+            type: 'ease-in-out', duration: 0.8
+            } 
         })
       }
       if(!inView){
         animateHeader.start({
-          transform: `rotate(180deg)`,
-       
+          opacity: 0,
           transition:{
-            type: 'ease-in-out', duration: 0.5,  
-          },
-
-         
+          type: 'ease-in-out', duration: 0.8
+          }      
         })
       }
   }, [inView])
+  
   return (
     <div>
     <div className={styles.fullscreen_intro_container}>
@@ -59,8 +55,8 @@ function About() {
     </div>
     
     <PagesContainer >
-      <section ref={ref} id="about" className={styles.about_container}>
-        <motion.h2 animate={animateHeader}  className={styles.highlight_name}> Johnathan Bryce</motion.h2>
+      <motion.section ref={ref} animate={animateHeader}  id="about" className={styles.about_container}>
+        <h2  className={styles.highlight_name}> Johnathan Bryce</h2>
         <div className={styles.about_flex_container}>
           
            {/* right side content on web / column on mobile */}
@@ -104,7 +100,7 @@ function About() {
         </div>
          
 
-      </section>
+      </motion.section>
 
       
     </PagesContainer>
