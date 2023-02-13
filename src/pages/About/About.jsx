@@ -55,7 +55,8 @@ function About() {
     </div>
     
     <PagesContainer >
-      <motion.section ref={ref} animate={animateHeader}  id="about" className={styles.about_container}>
+    <div id="about"></div>
+      <motion.section ref={ref} animate={animateHeader}   className={styles.about_container}>
         <h2  className={styles.highlight_name}> Johnathan Bryce</h2>
         <div className={styles.about_flex_container}>
           

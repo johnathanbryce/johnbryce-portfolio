@@ -42,7 +42,7 @@ function Contact() {
       <section  className={styles.contact_container}>
         <div className={styles.text_container}>
           {/* <h2> Get In Touch </h2> */}
-          <p> I am currently interested in web development opportunities. If you have other requests or questions, please do not hesitate to reach out! </p>
+          <p> I am currently interested in web development opportunities. If you have other requests or questions please do not hesitate to reach out! </p>
           <div className={styles.text_contact_info}>
             <div>
               <p> johnathanbryce@gmail.com </p>

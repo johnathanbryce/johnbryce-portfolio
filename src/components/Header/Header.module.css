@@ -11,7 +11,7 @@
 }
 
 nav{
-    width: 85%;
+    width: 100%;
 }
 
 .nav_container{
@@ -39,12 +39,82 @@ nav{
     color: var(--secondaryColor);
 }
 
-/* Uncomment if bringing back navbar numbers
-.nav_number{
-    color: var(--secondaryColor);
-    font-size: clamp(1.4rem, 2vw, 2rem);
+/* DROPDOWN MENU NAVBAR STYLES */
+
+.hamburger{
+    display: none;
+    cursor: pointer;
+    z-index: 999;
 }
-*/
+
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color:  black;
+}
+
+.navbar_dropdown {
+    /* position: relative; */
+    display: none;
+}
+  
+.menu_nav {
+    overflow-y: scroll;
+    list-style: none;
+    position: fixed;
+    top: 7.5rem;
+    left: 0;
+    bottom: 0;
+    height: 0;
+    overflow: hidden;
+    z-index: 999;
+    background-color: white;
+    /* transition: all 0.1s ease-in-out; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+  
+.menu_nav.show_menu {
+    width: 100%;
+    background-color: white;
+    height: 26%;
+    z-index: 999;   
+}
+
+
+.menu_link{
+    border-bottom: 0.2rem solid var(--lineSeperatorColor);
+    padding: 2rem;
+    background-color: white;
+    font-size: 1.6rem;
+    width: 100%;
+    height: 5.5rem;
+}
+
+.menu_link a{
+    transition: all 0.3s ease 0s;
+    text-decoration: none;
+    position: relative;
+}
+
+.menu_link:hover{
+    color: var(--secondaryColor);
+    font-weight: bold;
+}
+
+/* Applies an opacity to the remainder of the content underneath the menu navbar drop down */
+.shade_content {
+    background-color: rgba(75,75,75, 0.4);
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 10rem;  
+}
 
 
 /* Phones & Small Screens */
@@ -52,10 +122,12 @@ nav{
     .header_container{
         height: 7.5rem;
         border-bottom: 1px solid var(--lineSeperatorColor);
-    }
-    nav{
+        position: fixed; 
         width: 100%;
+        z-index: 999;
+        background-color: white;
     }
+
     .nav_container{
         gap: 1.5rem;
         display: flex;
@@ -66,27 +138,49 @@ nav{
         padding: 0.5rem;
     }
 
-    .nav_link_main{
-        display: none;
+    .navbar {
+        display: none; /*removes regular sized navbar and switches to hamburger / nav_dropdown */
     }
 
-    .nav_number{
-        display: none;
-        font-size: .5rem;
+    .navbar_dropdown {
+        display: flex;
+        justify-content: space-between;
+        padding: 2rem;
+        z-index: 999;
+        background-color: white;     
     }
+
+    .hamburger{
+        display: block;
+    }
+
+    .hamburger_active .bar:nth-child(2){
+        opacity: 0;
+    }
+
+    .hamburger_active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger_active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
 
 }
 
 /* Galaxy Fold / phones smaller than 380 px */
 @media only screen and (max-width: 380px){
-    nav{
-        width: 85%;
+    .hamburger{
+        position: relative;
+        top: 0.3rem;
+        
     }
-    .nav_container{
-        gap: 0rem;
+    .menu_link{
+        font-size: 1.2rem;
     }
-    .nav_link{
-        font-size: 1.6rem;
+
+    .menu_nav.show_menu{
+        height: 33%;
     }
 }
 
