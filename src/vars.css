@@ -1,32 +1,32 @@
 :root{
-    --backgroundColor: white; /* #0A182F */
+    --backgroundColor: white; 
 
-    --primaryColor: #0A182F; /* #CCD6F6 */
-    --secondaryColor: #A63446; /* #64FFDA */
+    --primaryColor: #0A182F; 
+    --secondaryColor: #A63446; 
 
     --standoutColor: #D72638;
     
-    --fontColor: #CCD6F6; /* #CCD6F6 */
-    --headerColor: #CCD6F6; /* #CCD6F6 */
+    --fontColor: #CCD6F6; 
+    --headerColor: #CCD6F6; 
 
     --iconColor: #A63446;
 
-    --sectionBreakColor: rgba(166,52,70, 0.8); /* rgba(166,52,70, 0.5) *.
+    --sectionBreakColor: rgba(166,52,70, 0.8); 
 
     /* HOME PAGE BTNS */
-    --btnHomeFontColor: white; /* #64FFDA; */
+    --btnHomeFontColor: white; 
     --btnHomeFontColorHover: #0A182F; 
-    --btnHomeBackgroundColor: #A63446; /* #0A182F */
-    --btnHomeHoverColor: rgba(166,52,70, 0.75); /* rgba(100, 255, 218, 0.25 */
+    --btnHomeBackgroundColor: #A63446; 
+    --btnHomeHoverColor: rgba(166,52,70, 0.75); 
 
     /* OTHER PAGES BTNS */
-    --btnFontColor: white; /* #64FFDA; */
+    --btnFontColor: white; 
     --btnFontColorHover: #0A182F; 
-    --btnBackgroundColor: #A63446; /* #0A182F */
-    --btnHoverColor: rgba(166,52,70, 0.75); /* rgba(100, 255, 218, 0.25 */
+    --btnBackgroundColor: #A63446; 
+    --btnHoverColor: rgba(166,52,70, 0.75); 
 
     /* MISC */
-    --bracketArrowColor: #A63446; /* #64FFDA */
+    --bracketArrowColor: #A63446; 
     --lineSeperatorColor: rgba(10,24,47, 0.15);
     --lineSize: 0.1rem;
     --borderRadius: 1rem;
@@ -39,22 +39,3 @@
     */
 }
 
-/* DARK MODE / OLD COLOURS
-    --backgroundColor:  #0A182F; 
-
-    --primaryColor: #CCD6F6; 
-    --secondaryColor: #64FFDA;
-
-    --standoutColor: #D72638;
-    
-    --fontColor: #CCD6F6; 
-    --headerColor: #CCD6F6; 
-
-    --btnFontColor: #64FFDA; 
-    --btnBackgroundColor: #0A182F; 
-    --btnHoverColor:  rgba(100, 255, 218, 0.25); 
-
-    --bracketArrowColor: #64FFDA; 
-
-
-*/

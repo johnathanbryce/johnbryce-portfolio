@@ -37,7 +37,7 @@
     flex-direction: column;
     gap: 2rem;
     padding: 2rem;
-    margin-top: 10%;
+    margin-top: 8%;
     height: 100vh;
 
 }
@@ -52,7 +52,7 @@
 
 .highlight_name{
     color: var(--secondaryColor);
-    font-size: clamp(4rem, 4vw, 6rem);
+    font-size: clamp(3.5rem, 4vw, 6rem);
     text-align: center;
     width: 100%;
     margin-bottom: 3rem;
@@ -172,9 +172,14 @@
 
 /* Mobile devices / smaller screens - column layout */
 @media only screen and (max-width: 800px) {
+    .fullscreen_intro_container{
+        height: 95vh;
+    }
+
     .intro_text_svg{
         width: 60vw;
     }
+
     .about_container, .about_flex_container{
         display: flex;
         height: inherit;
@@ -211,4 +216,11 @@
         height: 0;
     }
 
+}
+
+/* Mobile Devices */
+@media only screen and (max-width: 450px){
+    .about_container{
+        margin-top: 20%;  
+    }
 }
