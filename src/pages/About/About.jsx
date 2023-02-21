@@ -6,18 +6,13 @@ import jbBioPic from '../../images/jbBioPic.jpeg';
 import DownArrow from '../../components/DownArrow/DownArrow';
 
 // External Libraries
-import { 
-  FaLinkedin, FaGithub
-} from "react-icons/fa";
+import { FaLinkedin, FaGithub} from "react-icons/fa";
 import { HashLink as Link } from "react-router-hash-link";
 import { motion, useAnimation } from "framer-motion"
 import {useInView} from 'react-intersection-observer';
 
 // Components
 import PagesContainer from '../../components/PagesContainer/PagesContainer';
-
-
-
 
 function About() {
   const [ref, inView] = useInView({
@@ -59,20 +54,17 @@ function About() {
       <motion.section ref={ref} animate={animateHeader}   className={styles.about_container}>
         <h2  className={styles.highlight_name}> Johnathan Bryce</h2>
         <div className={styles.about_flex_container}>
-          
-           {/* right side content on web / column on mobile */}
            <div className={styles.bio_pic_container}>
             <img className={styles.bio_pic} src={jbBioPic} alt='John Bryce holding a cup of coffee at the beach'/>
           </div>
 
           <div className={styles.line_content_break_vertical}> </div>
  
-          {/* left side content on web / column on mobile */}
-          
+
           <div className={styles.about_content_container}>
             <div className={styles.text_container}>
-              <p> I am a passionate Front-End Web Developer based in Vancouver BC.</p>
-              <p> I am excited about building fluid, creative, and interactive websites and applications. My focus is on continually expanding on my coding skillsets and experience.</p>
+              <p> I am a Front-End Web Developer based in Vancouver BC.</p>
+              <p> With a solid foundation in HTML, CSS, JavaScript, and React, I am excited about building fluid, creative, and interactive websites and applications. My passion for this field has me constantly learning and seeking new challenges to improve my skills and stay up-to-date with the latest trends in web development.</p>
               <p> Welcome to my portfolio page!</p>
             </div>
 

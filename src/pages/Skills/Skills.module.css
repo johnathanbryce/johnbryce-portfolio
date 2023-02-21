@@ -1,19 +1,42 @@
 .skills_education_container{
     display: flex;
-    height: 90vh;
-    gap: 10rem;
+    flex-direction: column;
+    gap: 6rem;
+   /*  height: 90vh; */
+    /* gap: 10rem; */
+}
+
+.skills_container, .education_container{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    flex: 1;
+}
+
+.skills_flex, .education_flex {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    padding: 0.5rem;
+}
+
+.horizontal_line{
+    border: var(--lineSize) solid var(--secondaryColor);
+    height: 0.1rem;
+    position: relative;
+    width: 1rem;
 }
 
 
-.education_header{
+/* .education_header{
     grid-area: header;
     align-self: flex-start;
 }
 
 .skills_header{
     justify-self: flex-start;
-}
-
+} */
+/* 
 .education_insititution_name{
     width: 20rem;
 }
@@ -80,11 +103,11 @@
     height: 0.1rem;
     position: relative;
     height: 100%;
-}
+} */
 
 /* Mobile devices / smaller screens - column layout */
 @media only screen and (max-width: 900px){
-    .skills_education_container{
+/*     .skills_education_container{
         flex-direction: column;
         gap: 2rem;
     }
@@ -113,13 +136,13 @@
     }
     .skills_flex{
         height: 4.2rem;
-    }
+    } */
 
 }
 
 /* Galaxy Fold / iphoneSE -- phones smaller than 391 px */
 @media only screen and (max-width: 391px){
-    .skills_flex{
+/*     .skills_flex{
         height: 3rem;
-    }
+    } */
 }
