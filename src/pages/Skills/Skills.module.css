@@ -1,9 +1,6 @@
 .skills_education_container{
     display: flex;
-    flex-direction: column;
     gap: 6rem;
-   /*  height: 90vh; */
-    /* gap: 10rem; */
 }
 
 .skills_container, .education_container{
@@ -11,6 +8,7 @@
     flex-direction: column;
     gap: 2rem;
     flex: 1;
+    margin: 3rem 0;
 }
 
 .skills_flex, .education_flex {
@@ -27,122 +25,84 @@
     width: 1rem;
 }
 
-
-/* .education_header{
-    grid-area: header;
-    align-self: flex-start;
-}
-
-.skills_header{
-    justify-self: flex-start;
-} */
-/* 
-.education_insititution_name{
-    width: 20rem;
-}
-
-.education_grid_container p a{
-    grid-area: education; 
-}
-
-.education_container p{
-    grid-area: location;
-}
-
-.education_grid_container{
-    display: grid;
-    grid-template-columns: 3fr 1fr 1fr;
-    grid-template-areas:
-    'header header header'
-    'education . location'
-    'education . location'
-    'education . location';
-    align-items: center;
-    flex: 2.5;
-    padding: 2rem;
-    gap: 7rem;
-
-}
-
-.skills_grid_container{
-    flex: 2.5;
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-items: center;
-    align-items: center;
-    padding: 2rem;
-}
-
-.skills_flex{
+.icons_container{
+    flex: 1;
+    font-size: clamp(3rem, 5vw, 5.5rem);
+    color: var(--primaryColor);
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
 }
 
-.skills_flex:nth-child(even){
-    flex-direction: row-reverse;
+.icon_1 {
+    position: relative; 
+    left: 10%;
 }
 
-.horizontal_line_education{
-    border: var(--lineSize) solid var(--secondaryColor);
-    height: 0.1rem;
-    position: relative;
-    width: 7rem;
+.icon_2 {
+    position: relative; 
+    top: 5rem;
+    left: 40%;
 }
 
-.horizontal_line{
-    border: var(--lineSize) solid var(--secondaryColor);
-    height: 0.1rem;
-    position: relative;
-    width: 20%;
+.icon_3 {
+    position: relative; 
+    bottom: 10rem;
+    left: 80%;
 }
 
-.line_content_break{
-    border: var(--lineSize) solid var(--lineSeperatorColor);
-    height: 0.1rem;
-    position: relative;
-    height: 100%;
-} */
+.icon_4 {
+    position: relative; 
+    left: 5%;
+}
 
-/* Mobile devices / smaller screens - column layout */
-@media only screen and (max-width: 900px){
-/*     .skills_education_container{
+.icon_5 {
+    position: relative; 
+    left: 65%;
+}
+
+.icon_6 {
+    position: relative; 
+    top: 2rem;
+    left: 25%;
+}
+
+.icon_7 {
+    position: relative; 
+    top: 2rem;
+    left: 70%;
+}
+
+
+
+
+/* Mobile devices / smaller screens - icons container column layout */
+@media only screen and (max-width: 1200px){
+    .icons_container{
+        gap: 3.5rem;
+
+    }
+
+    .icon_1, .icon_2, .icon_3, .icon_4, .icon_5, .icon_6, .icon_7{
+      position: static;
+    }
+
+}
+
+/* Mobile devices / smaller screens - whole page column layout */
+@media only screen and (max-width: 1100px){
+    .skills_education_container{
+        display: flex;
         flex-direction: column;
-        gap: 2rem;
     }
-
-    .education_grid_container{
-        gap: 1rem;
-        padding: 2rem;
+    .icons_container{
+        flex-direction: row;
     }
-
-    .education_insititution_name{
-        width: inherit;
-        font-size: 1.2rem;
-    }
-
-    .horizontal_line_education{
-        width: 20%;
-    }
-
-    .line_content_break{
-        height: 0%;
-    }
-
-    .skills_grid_container{
-        gap: 0.5rem;
-        line-height: 1;
-    }
-    .skills_flex{
-        height: 4.2rem;
-    } */
 
 }
 
 /* Galaxy Fold / iphoneSE -- phones smaller than 391 px */
 @media only screen and (max-width: 391px){
-/*     .skills_flex{
-        height: 3rem;
-    } */
+
 }
