@@ -52,7 +52,7 @@ function About() {
           <div className={styles.about_content_container}>
             <div className={styles.text_container}>
               <p> I am a Front-End Web Developer based in Vancouver BC.</p>
-              <p> With a solid foundation in HTML, CSS, JavaScript, and React, I am excited about building fluid, creative, and interactive websites and applications. My passion for this field has me constantly learning and seeking new challenges to improve my skills and stay up-to-date with the latest trends in web development.</p>
+              <p> With a solid foundation in JavaScript, TypeScript, React, CSS & HTML, I am excited about building fluid, creative, and interactive websites and applications. My passion for this field has me constantly learning and seeking new challenges to improve my skills and stay up-to-date with the latest trends in web development.</p>
               <p> Welcome to my portfolio page!</p>
             </div>
 
