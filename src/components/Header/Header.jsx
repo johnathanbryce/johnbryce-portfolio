@@ -39,8 +39,8 @@ function Header() {
     <div className={styles.header_container}>
       <nav className={styles.navbar}>
         <ul className={styles.nav_container}>
-          <li><Link to="#about" className={styles.nav_link}> ABOUT </Link></li>
           <li><Link to="#projects" className={styles.nav_link}> PROJECTS </Link></li>
+          <li><Link to="#about" className={styles.nav_link}> ABOUT </Link></li>
           <li><a className={`${styles.nav_link} ${styles.nav_link_main}`} href="/"> {'< JB >'} </a></li>
           <li><Link to="#skills" className={styles.nav_link}> SKILLS </Link></li>
           <li><Link to="#contact" className={styles.nav_link}> CONTACT </Link></li>
@@ -57,8 +57,8 @@ function Header() {
               <div className={styles.bar} ></div>
           </div> 
           <ul className={`${styles.menu_nav} ${isDropdownActive ? styles.show_menu : '' }`}>
-              <Link to="#about" smooth={true} onClick={onNavItemClickCloseDropdown}><li className={styles.menu_link}> ABOUT </li></Link>
               <Link to="#projects" smooth={true} onClick={onNavItemClickCloseDropdown}> <li className={styles.menu_link}>PROJECTS </li></Link>
+              <Link to="#about" smooth={true} onClick={onNavItemClickCloseDropdown}><li className={styles.menu_link}> ABOUT </li></Link>
               <Link to="#skills" smooth={true} onClick={onNavItemClickCloseDropdown }><li className={styles.menu_link}> SKILLS </li></Link>
               <Link to="#contact" smooth={true} onClick={onNavItemClickCloseDropdown}><li className={styles.menu_link}> CONTACT </li></Link>
           </ul>

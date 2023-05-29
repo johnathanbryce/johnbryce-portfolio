@@ -39,7 +39,7 @@ function Skills() {
   }, [inView])
   
   return (
-    <div id="skills">
+    <div>
     <SectionBreakTitle header='skills & education.' />
     <PagesContainer>
       <motion.section ref={ref} animate={animateSectionFadeIn} className={styles.skills_education_container}>

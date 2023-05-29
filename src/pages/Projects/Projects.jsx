@@ -1,14 +1,11 @@
 import styles from './Projects.module.css';
-
 // Components
 import PagesContainer from '../../components/PagesContainer/PagesContainer';
 import SectionBreakTitle from '../../components/SectionBreakTitle/SectionBreakTitle'
-
-
 // Pages
 import ProjectContainer from './ProjectContainer/ProjectContainer';
-
 // Internal Assets
+import julien from '../../images/julien.jpeg'
 import sollunnaEssence from '../../images/sollunnaEssence.jpeg'
 import diceGame from '../../images/diceGame.jpeg';
 import dailyFeed from '../../images/dailyFeed.jpeg';
@@ -18,23 +15,33 @@ import oldPortfolio from '../../images/portfolioOld.jpeg';
 function Projects() {
 
   return (
-    <div id="projects">
+    <div>
       <SectionBreakTitle header='check out my work.' />   
       <PagesContainer>
         <section className={styles.projects_container}>
         <ProjectContainer
-            flexDirection='normal'
-            featuredType='Work'
-            title='romp'
-            link={'https://rompathlete.com/'}
-            description='Romp is an activity planning social platform that allows you to create and share activities and events. You can broadcast what you are doing, when you are doing it, and then go and do it with the people you actually want to do it with, in your area!'
-            languages="React, JavaScript, CSS, HTML"
-            img={romp}
-            github='https://github.com/rompAthlete/rompWebsite'
-            />
+              flexDirection='normal'
+              featuredType='Work'
+              title='Julien Verschooris'
+              link={'https://julien-verschooris.vercel.app//'}
+              description="This portfolio website showcases the latest personal and professional music compositions of Julien Verschooris, a multi-award-winning composer."
+              languages="Next.js, TypeScript, CSS, HTML"
+              img={julien}
+              github='https://github.com/johnathanbryce/julien-verschooris'
+          />
+          <ProjectContainer
+              flexDirection=''
+              featuredType='Work'
+              title='romp'
+              link={'https://rompathlete.com/'}
+              description='Romp is an activity planning social platform that allows you to create and share activities and events. You can broadcast what you are doing, when you are doing it, and then go and do it with the people you actually want to do it with, in your area!'
+              languages="React, JavaScript, CSS, HTML"
+              img={romp}
+              github='https://github.com/rompAthlete/rompWebsite'
+          />
           <div className={styles.line_content_break_horizontal}> </div>
           <ProjectContainer
-            flexDirection=''
+            flexDirection='normal'
             featuredType='Work'
             title='SolLunna Essence'
             link="https://www.sollunaessence.com/"
@@ -45,7 +52,7 @@ function Projects() {
           />
           <div className={styles.line_content_break_horizontal}> </div>
           <ProjectContainer
-            flexDirection='normal'
+            flexDirection=''
             featuredType='Project'
             title='My Daily Feed'
             link="https://my-daily-feed.netlify.app/"
@@ -56,7 +63,7 @@ function Projects() {
           />
           <div className={styles.line_content_break_horizontal}> </div>
           <ProjectContainer
-            flexDirection=''
+            flexDirection='normal'
             featuredType='Project'
             title='Dice Game'
             link="https://dice-game-jb.netlify.app/"
@@ -67,7 +74,7 @@ function Projects() {
           />
           <div className={styles.line_content_break_horizontal}> </div>
           <ProjectContainer
-            flexDirection='normal'
+            flexDirection=''
             featuredType='Project'
             title='Portfolio - v1'
             link="https://johnbrycewebdevelopment-old.netlify.app/"
