@@ -35,7 +35,7 @@ function Contact() {
     );
   }
   return (
-    <div id="contact">
+    <div>
     <SectionBreakTitle header='get in touch.' />
     <PagesContainer>
     <Link to="#about"><UpArrow /></Link>

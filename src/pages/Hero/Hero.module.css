@@ -1,0 +1,31 @@
+.fullscreen_intro_container{
+    color: var(--secondaryColor);
+    font-size: 10rem;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+ 
+.intro_text_svg{
+   /* svg path length: 751.6892700195312 */
+   height: 40vw;
+   width: 40vw;
+   stroke: var(--secondaryColor);
+   stroke-width: 1;
+   stroke-dasharray: 751;
+   stroke-dashoffset: 200;
+   animation: 5s fillSvg linear;
+   margin-bottom: 5%;
+   
+}
+
+@keyframes fillSvg{
+    0%{
+        stroke-dashoffset: 751;
+    }
+    100%{
+        stroke-dashoffset: 0;
+    }
+}
