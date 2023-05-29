@@ -26,7 +26,6 @@ const [isLoading, setIsLoading] = useState(true)
     }, 2500 ) 
   }, [])
 
-
   return (
 
     <div>

@@ -61,8 +61,8 @@ function About() {
             <div className={styles.links_container}>
               <div className={styles.resume_btn_container}>
                 <button className={styles.resume_btn}>
-                  <a
-                    href="https://docs.google.com/document/d/1BvGc7f8dbyUsqAugpslSbU677PLChgDRwdLFniFwkJc/export?format=pdf"
+                  <a 
+                    href="https://docs.google.com/document/d/1Ak-nnkqrAXLXqr9GcqmnhahiYfiUkv06KU4QE5-bA-w/export?format=pdf"
                     download
                     rel="noreferrer"
                   >
