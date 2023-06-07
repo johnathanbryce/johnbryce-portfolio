@@ -48,7 +48,7 @@ function Skills() {
             <h3> Skills </h3>
               <div className={styles.skills_flex}>
                 <div className={styles.horizontal_line}> </div>
-                <p> Proficient in HTML, CSS, SASS, JavaScript, jQuery and React </p>
+                <p> Proficient in JavaScript, TypeScript, React, Next.js, CSS, HTML, and jQuery. </p>
               </div> 
                 
               <div className={styles.skills_flex}>
