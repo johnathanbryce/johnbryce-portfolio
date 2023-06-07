@@ -11,6 +11,7 @@ import diceGame from '../../images/diceGame.jpeg';
 import dailyFeed from '../../images/dailyFeed.jpeg';
 import romp from '../../images/romp.jpeg';
 import oldPortfolio from '../../images/portfolioOld.jpeg';
+import jBDev from '../../images/jBDev.jpeg';
 
 function Projects() {
 
@@ -19,18 +20,28 @@ function Projects() {
       <SectionBreakTitle header='check out my work.' />   
       <PagesContainer>
         <section className={styles.projects_container}>
-        <ProjectContainer
-              flexDirection='normal'
-              featuredType='Work'
-              title='Julien Verschooris'
-              link={'https://julien-verschooris.vercel.app//'}
-              description="This portfolio website showcases the latest personal and professional music compositions of Julien Verschooris, a multi-award-winning composer."
-              languages="Next.js, TypeScript, CSS, HTML"
-              img={julien}
-              github='https://github.com/johnathanbryce/julien-verschooris'
-          />
           <ProjectContainer
-              flexDirection=''
+                flexDirection='normal'
+                featuredType='Work'
+                title='jB Web Dev & Design'
+                link={'https://johnbryce-web-dev.vercel.app/'}
+                description="A landing page to promote my web development skills, focusing on small businesses as my target audience."
+                languages="Next.js, TypeScript, CSS, HTML"
+                img={jBDev}
+                github='https://github.com/johnathanbryce/johnbryce-web-dev'
+            />
+          <ProjectContainer
+                flexDirection=''
+                featuredType='Work'
+                title='Julien Verschooris'
+                link={'https://www.julienverschooris.com/'}
+                description="This portfolio website showcases the latest personal and professional music compositions of Julien Verschooris, a multi-award-winning composer."
+                languages="Next.js, TypeScript, CSS, HTML"
+                img={julien}
+                github='https://github.com/johnathanbryce/julien-verschooris'
+            />
+            <ProjectContainer
+              flexDirection='normal'
               featuredType='Work'
               title='romp'
               link={'https://rompathlete.com/'}
@@ -41,7 +52,7 @@ function Projects() {
           />
           <div className={styles.line_content_break_horizontal}> </div>
           <ProjectContainer
-            flexDirection='normal'
+            flexDirection=''
             featuredType='Work'
             title='SolLunna Essence'
             link="https://www.sollunaessence.com/"
@@ -52,7 +63,7 @@ function Projects() {
           />
           <div className={styles.line_content_break_horizontal}> </div>
           <ProjectContainer
-            flexDirection=''
+            flexDirection='normal'
             featuredType='Project'
             title='My Daily Feed'
             link="https://my-daily-feed.netlify.app/"
@@ -63,7 +74,7 @@ function Projects() {
           />
           <div className={styles.line_content_break_horizontal}> </div>
           <ProjectContainer
-            flexDirection='normal'
+            flexDirection=''
             featuredType='Project'
             title='Dice Game'
             link="https://dice-game-jb.netlify.app/"
@@ -74,7 +85,7 @@ function Projects() {
           />
           <div className={styles.line_content_break_horizontal}> </div>
           <ProjectContainer
-            flexDirection=''
+            flexDirection='normal'
             featuredType='Project'
             title='Portfolio - v1'
             link="https://johnbrycewebdevelopment-old.netlify.app/"
