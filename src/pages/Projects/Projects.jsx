@@ -12,6 +12,7 @@ import dailyFeed from '../../images/dailyFeed.jpeg';
 import romp from '../../images/romp.jpeg';
 import oldPortfolio from '../../images/portfolioOld.jpeg';
 import jBDev from '../../images/jBDev.jpeg';
+import myTube from '../../images/myTube.png'
 
 function Projects() {
 
@@ -20,6 +21,16 @@ function Projects() {
       <SectionBreakTitle header='check out my work.' />   
       <PagesContainer>
         <section className={styles.projects_container}>
+          <ProjectContainer
+                flexDirection=''
+                featuredType='Project'
+                title='MyTube'
+                link={'https://mytube-jb.vercel.app/'}
+                description="MyTube fetches data from multiple YouTube channels, displaying the 8 latest videos for each. With seamless integration with the YouTube API, it keeps me updated on the latest content from my favourite creators, all in one place."
+                languages="Next.js, TypeScript, CSS, HTML"
+                img={myTube}
+                github='https://github.com/johnathanbryce/mytube'
+            />
           <ProjectContainer
                 flexDirection='normal'
                 featuredType='Work'
