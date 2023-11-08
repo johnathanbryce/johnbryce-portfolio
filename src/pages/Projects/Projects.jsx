@@ -13,6 +13,7 @@ import romp from '../../images/romp.jpeg';
 import oldPortfolio from '../../images/portfolioOld.jpeg';
 import jBDev from '../../images/jBDev.jpeg';
 import myTube from '../../images/myTube.png'
+import fitFriends from '../../images/fitFriends.png'
 
 function Projects() {
 
@@ -21,6 +22,16 @@ function Projects() {
       <SectionBreakTitle header='check out my work.' />   
       <PagesContainer>
         <section className={styles.projects_container}>
+           <ProjectContainer
+                flexDirection='normal'
+                featuredType='Project'
+                title='Fit Friends'
+                link={'https://fitfriends-five.vercel.app/'}
+                description="Fit Friends is a dynamic full-stack web application that enables users to create, join, and invite others to personalized fitness challenges. As my debut full-stack project, it exemplifies a seamless integration of front-end flair and back-end prowess, offering an interactive platform for fitness community building."
+                languages="Next.js, TypeScript, Firebase Realtime Database, Firebase Authentication, CSS"
+                img={fitFriends}
+                github='https://github.com/johnathanbryce/fitfriends'
+            />
           <ProjectContainer
                 flexDirection=''
                 featuredType='Project'
